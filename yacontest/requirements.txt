@@ -1,0 +1,4 @@
+daemonize
+requests
+lxml
+python-telegram-bot
