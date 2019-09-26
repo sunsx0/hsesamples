@@ -84,7 +84,10 @@ class Bot:
 
     def on_text(self, update, context):
         if context.chat_data.get('state', StateType.Default) == StateType.GetTest:
-            submission_info = self.api.run_report(update.message.text.strip())
+            submission_id = update.message.text.strip()
+            self.logger.info(f'run_report request from {update.message.from_user}: {submission_id}')
+
+            submission_info = self.api.run_report(submission_id)
             update.message.reply_text(
                 render_submission_report(submission_info),
                 parse_mode=ParseMode.HTML,

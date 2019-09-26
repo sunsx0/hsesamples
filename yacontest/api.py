@@ -48,9 +48,6 @@ class YaApi:
         page = html.fromstring(resp)
         content = page.xpath('//*[@id="content"]')[0]
 
-        with open('tmp.html', 'w') as f:
-            f.write(resp)
-
         submission_info = SubmissionInfo(
             contest_name=inline_text(content.xpath('table/tr[2]/td[2]/a')[0].text),
             task=inline_text(content.xpath('table/tr[3]/td[2]/a')[0].text),

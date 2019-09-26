@@ -1,0 +1,2136 @@
+<!DOCTYPE html
+  SYSTEM "html">
+<html ng-app="contest">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link href="//yastatic.net/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+      <link href="/admin/r/jasny-bootstrap/css/jasny-bootstrap.min.css" rel="stylesheet" type="text/css">
+      <link href="/admin/r/bootstrap-editable/css/bootstrap-editable.css" rel="stylesheet" type="text/css">
+      <link href="/admin/r/bootstrap-switch/css/bootstrap3/bootstrap-switch.min.css" rel="stylesheet" type="text/css">
+      <link href="/admin/r/bootstrap-editable/inputs-ext/duration/duration.css" rel="stylesheet" type="text/css">
+      <link href="/admin/r/bootstrap-editable/select2/select2.css" rel="stylesheet" type="text/css">
+      <link href="/admin/r/typeahead/typeahead.js-bootstrap.css" rel="stylesheet" type="text/css">
+      <link href="/z/r/common.css" rel="stylesheet" type="text/css">
+      <link href="/admin/r/common.css" rel="stylesheet" type="text/css">
+      <title>Посылка №21542454</title>
+      <link href="/admin/r/runs/run-report.css" rel="stylesheet" type="text/css">
+      <link href="//yastatic.net/highlightjs/8.2/styles/default.min.css" rel="stylesheet" type="text/css">
+      <link href="//yastatic.net/highlightjs/8.2/styles/magula.min.css" rel="stylesheet" type="text/css">
+      <link href="/admin/r/ws-mode/css/ws-mode.css" rel="stylesheet" type="text/css">
+      <link href="/admin/r/hex-mode/css/hex-mode.css" rel="stylesheet" type="text/css"><style type="text/css">
+            pre .line::before {
+                width: 4em;
+            }
+        </style></head>
+   <body><script type="text/javascript">
+                    window.localization = {};
+                </script><script type="text/javascript">window.localization.Yes = 'Да';</script><script type="text/javascript">window.localization.No = 'Нет';</script><script type="text/javascript">window.localization.Empty = 'Не определено';</script><script type="text/javascript">window.localization.Gb = 'Гб';</script><script type="text/javascript">window.localization.Mb = 'Мб';</script><script type="text/javascript">window.localization.Kb = 'Кб';</script><script type="text/javascript">window.localization.Substringsearch = 'Поиск по подстроке';</script><script type="text/javascript">window.localization.read = 'read';</script><script type="text/javascript">window.localization.write = 'write';</script><script type="text/javascript">window.localization.ID = 'ID';</script><script type="text/javascript">window.localization.Name = 'Имя';</script><script type="text/javascript">window.localization.Login = 'Логин';</script><script type="text/javascript">window.localization.Confirmremoval = 'Confirm removal';</script><nav class="navbar navbar-default navbar-fixed-top" id="main-navbar" role="navigation">
+         <div class="container-fluid">
+            <div class="navbar-header"><button class="navbar-toggle" data-target="#bs-navbar-collapse" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span><span class="glyphicon glyphicon-bar"></span><span class="glyphicon glyphicon-bar"></span><span class="glyphicon glyphicon-bar"></span></button><a class="navbar-brand z-brand" href="/admin">Я.Contest</a></div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+               <ul class="nav navbar-nav">
+                  <li class="dropdown "><a href="#" class="dropdown-toggle" data-toggle="dropdown">Турниры<b class="caret"></b></a><ul class="dropdown-menu">
+                        <li><a href="/admin/competitions">Турниры</a></li>
+                     </ul>
+                  </li>
+                  <li class=""><a href="/admin/contests">Соревнования</a></li>
+                  <li class="dropdown "><a href="#" class="dropdown-toggle" data-toggle="dropdown">Задачи<b class="caret"></b></a><ul class="dropdown-menu">
+                        <li><a href="/admin/problems">Управление задачами</a></li>
+                        <li><a href="/admin/problemsets">Управление наборами задач</a></li>
+                     </ul>
+                  </li>
+                  <li class="dropdown "><a href="#" class="dropdown-toggle" data-toggle="dropdown">Пользователи<b class="caret"></b></a><ul class="dropdown-menu">
+                        <li><a href="/admin/user-groups">Группы пользователей</a></li>
+                     </ul>
+                  </li>
+               </ul>
+               <ul class="nav pull-right nav-pills profile-nav">
+                  <li><input id="general-search"></li>
+                  <li><a href="/admin/async-operations" id="async-op-href"><i class="glyphicon glyphicon-flash"></i><span class="badge badge-notify" id="notifications-count"></span></a></li>
+                  <li><a href="/admin/settings"><i class="glyphicon glyphicon-cog"></i><i class="glyphicon glyphicon-question-sign"></i>(ru)
+                        </a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <div id="main-content"><style type="text/css">
+            textarea {
+                resize: vertical;
+            }
+        </style><div class="container" id="content">
+            <h3>Посылка № =
+               21542454 (2019.09.26 22:16:41)<a class="pull-right" href="/admin/contest-submissions?contestId=14003">все посылки контеста</a></h3>
+            <table class="table table-condensed table-striped table-bordered run-report-table">
+               <col width="1px">
+               <tr>
+                  <td><b>Вердикт</b></td>
+                  <td><b>Wrong answer</b> 
+                     <div class="btn-group ml-10"><button class="btn btn-default dropdown-toggle btn-xs" data-toggle="dropdown" id="verdict-"><span class="caret"></span></button><ul class="dropdown-menu">
+                           <li><a action-url="/admin/contest-submissions/rejudge?runId=21542454" class="rejudge-link btn btn-link csrf-checked" data-run-id="21542454" href="/admin/run-report/rejudge?runId=21542454">Пересудить</a></li>
+                           <li class="divider"></li>
+                           <li><a action-button="#verdict-21542454" class="btn btn-link ajax-action-btn csrf-checked" data-reload-page="true" href="/admin/run-report/set-verdict?runId=21542454&amp;verdict=ok">ok</a></li>
+                           <li><a action-button="#verdict-21542454" class="btn btn-link ajax-action-btn csrf-checked" data-reload-page="true" href="/admin/run-report/set-verdict?runId=21542454&amp;verdict=wrong-answer">wrong-answer</a></li>
+                           <li><a action-button="#verdict-21542454" class="btn btn-link ajax-action-btn csrf-checked" data-reload-page="true" href="/admin/run-report/set-verdict?runId=21542454&amp;verdict=time-limit-exceeded">time-limit-exceeded</a></li>
+                           <li><a action-button="#verdict-21542454" class="btn btn-link ajax-action-btn csrf-checked" data-reload-page="true" href="/admin/run-report/set-verdict?runId=21542454&amp;verdict=memory-limit-exceeded">memory-limit-exceeded</a></li>
+                           <li><a action-button="#verdict-21542454" class="btn btn-link ajax-action-btn csrf-checked" data-reload-page="true" href="/admin/run-report/set-verdict?runId=21542454&amp;verdict=runtime-error">runtime-error</a></li>
+                           <li><a action-button="#verdict-21542454" class="btn btn-link ajax-action-btn csrf-checked" data-reload-page="true" href="/admin/run-report/set-verdict?runId=21542454&amp;verdict=security-violation">security-violation</a></li>
+                           <li><a action-button="#verdict-21542454" class="btn btn-link ajax-action-btn csrf-checked" data-reload-page="true" href="/admin/run-report/set-verdict?runId=21542454&amp;verdict=idleness-limit-exceeded">idleness-limit-exceeded</a></li>
+                           <li><a action-button="#verdict-21542454" class="btn btn-link ajax-action-btn csrf-checked" data-reload-page="true" href="/admin/run-report/set-verdict?runId=21542454&amp;verdict=crash">crash</a></li>
+                           <li><a action-button="#verdict-21542454" class="btn btn-link ajax-action-btn csrf-checked" data-reload-page="true" href="/admin/run-report/set-verdict?runId=21542454&amp;verdict=presentation-error">presentation-error</a></li>
+                           <li><a action-button="#verdict-21542454" class="btn btn-link ajax-action-btn csrf-checked" data-reload-page="true" href="/admin/run-report/set-verdict?runId=21542454&amp;verdict=output-limit-exceeded">output-limit-exceeded</a></li>
+                           <li><a action-button="#verdict-21542454" class="btn btn-link ajax-action-btn csrf-checked" data-reload-page="true" href="/admin/run-report/set-verdict?runId=21542454&amp;verdict=compilation-error">compilation-error</a></li>
+                           <li><a action-button="#verdict-21542454" class="btn btn-link ajax-action-btn csrf-checked" data-reload-page="true" href="/admin/run-report/set-verdict?runId=21542454&amp;verdict=accepted-for-testing">accepted-for-testing</a></li>
+                           <li><a action-button="#verdict-21542454" class="btn btn-link ajax-action-btn csrf-checked" data-reload-page="true" href="/admin/run-report/set-verdict?runId=21542454&amp;verdict=manual-inspection">manual-inspection</a></li>
+                           <li><a action-button="#verdict-21542454" class="btn btn-link ajax-action-btn csrf-checked" data-reload-page="true" href="/admin/run-report/set-verdict?runId=21542454&amp;verdict=precompile-check-failed">precompile-check-failed</a></li>
+                           <li><a action-button="#verdict-21542454" class="btn btn-link ajax-action-btn csrf-checked" data-reload-page="true" href="/admin/run-report/set-verdict?runId=21542454&amp;verdict=ignored">ignored</a></li>
+                        </ul>
+                     </div><a class="ml-10" href="/admin/contest-submissions/?contestId=14003&amp;filtersCount=1&amp;filter0=verdict%3DWA" title="Все посылки с вердиктом Wrong answer"><i class="glyphicon glyphicon-filter"></i></a><a class="ml-10" href="/admin/contest-submissions/?contestId=14003&amp;filtersCount=2&amp;filter0=verdict%3DWA&amp;filter1=participantName%3D%D0%A0%D1%8B%D0%B1%D0%BA%D0%B8%D0%BD+%D0%93%D0%B5%D0%BE%D1%80%D0%B3%D0%B8%D0%B9+%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%B8%D1%87" title="Посылки этого участника с вердиктом Wrong answer"><i class="glyphicon glyphicon-filter"><sub><i class="glyphicon glyphicon-user"></i></sub></i></a></td>
+               </tr>
+               <tr>
+                  <td>Контест</td>
+                  <td><a href="/admin/edit-contest?contestId=14003">14003: ОиМП-1, ДЗ 4 (Вещественные числа и строки)</a></td>
+               </tr>
+               <tr>
+                  <td>Задача</td>
+                  <td><a href="/admin/ng#/problem/175943%2F2016_09_17%2FViDOJMR847">U:
+                        Квадратное уравнение - 2</a><a class="ml-10" href="/admin/contest-submissions/?contestId=14003&amp;filtersCount=1&amp;filter0=problemTitle%3DU" title="Все посылки в задачу U"><i class="glyphicon glyphicon-filter"></i></a><a class="ml-10" href="/admin/contest-submissions/?contestId=14003&amp;filtersCount=2&amp;filter0=problemTitle%3DU&amp;filter1=participantName%3D%D0%A0%D1%8B%D0%B1%D0%BA%D0%B8%D0%BD+%D0%93%D0%B5%D0%BE%D1%80%D0%B3%D0%B8%D0%B9+%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%B8%D1%87" title="Посылки этого участника с вердиктом U"><i class="glyphicon glyphicon-filter"><sub><i class="glyphicon glyphicon-user"></i></sub></i></a></td>
+               </tr>
+               <tr>
+                  <td>Participant</td>
+                  <td>Рыбкин Георгий Михайлович<a class="ml-10" href="/admin/contest-submissions/?contestId=14003&amp;filtersCount=1&amp;filter0=participantName%3D%D0%A0%D1%8B%D0%B1%D0%BA%D0%B8%D0%BD+%D0%93%D0%B5%D0%BE%D1%80%D0%B3%D0%B8%D0%B9+%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%B8%D1%87" title="Все посылки участника Рыбкин Георгий Михайлович"><i class="glyphicon glyphicon-filter"></i></a><a class="ml-10" data-toggle="modal" href="#send-message" title="Отправить сообщение участнику"><i class="glyphicon glyphicon-envelope"></i></a><div aria-hidden="true" aria-labelledby="dialog-label" class="modal fade" id="send-message" role="dialog" tabindex="-1">
+                        <div class="modal-dialog">
+                           <div class="modal-content">
+                              <div class="modal-header"><button aria-hidden="true" class="close" data-dismiss="modal" type="button">×</button><h3>Отправить сообщение</h3>
+                              </div>
+                              <div class="modal-body">
+                                 <form action="/admin/run-report/send-message" id="send-message-form">
+                                    <fieldset><input name="runId" type="hidden" value="21542454"><h4>Отправить сообщение участнику</h4><input class="form-control" name="subject" type="text" value="Посылка № 21542454"><textarea class="form-control" name="text" placeholder="Enter text...&#xA;    " rows="5"></textarea><button class="btn btn-default" type="submit">Отправить</button><input name="csrf-token" type="hidden" value="os6iluKe5myYisGF6F0U8w=="></fieldset>
+                                 </form>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Компилятор</td>
+                  <td>Python 3.7.3<a class="ml-10" href="/admin/contest-submissions/?contestId=14003&amp;filtersCount=1&amp;filter0=compiler%3Dpython3_7_3" title="Все посылки на языке Python 3.7.3"><i class="glyphicon glyphicon-filter"></i></a><a class="ml-10" href="/admin/contest-submissions/?contestId=14003&amp;filtersCount=2&amp;filter0=compiler%3Dpython3_7_3&amp;filter1=participantName%3D%D0%A0%D1%8B%D0%B1%D0%BA%D0%B8%D0%BD+%D0%93%D0%B5%D0%BE%D1%80%D0%B3%D0%B8%D0%B9+%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%B8%D1%87" title="Посылки этого участника на языке Python 3.7.3"><i class="glyphicon glyphicon-filter"><sub><i class="glyphicon glyphicon-user"></i></sub></i></a></td>
+               </tr>
+               <tr>
+                  <td>Имя файла</td>
+                  <td>U.py</td>
+               </tr>
+               <tr>
+                  <td>IP</td>
+                  <td>91.228.178.70</td>
+               </tr>
+            </table>
+            <h4><a class="js-link container-toggler" data-container="#source" href="#">Исходный код</a><small>
+                  (
+                  <a class="csrf-checked" data-run-id="21542454" data-url="/admin/run-report/download-source" href="#" id="download-source-link">Скачать</a>
+                  )
+                  <a class="container-toggler js-link" data-container="#filename-format-div" href="#">Формат имени файла</a></small></h4>
+            <div class="hide well" id="filename-format-div">
+               <div>Доступные подстановки
+                  
+                  <ul>
+                     
+                     <li>%username% - отображаемое имя участника</li>
+                     
+                     <li>%problemname% - название задачи</li>
+                     
+                     <li>%filename% - название файла, с которым пользователь отправил файл</li>
+                     
+                     <li>%runid% - id посылки</li>
+                     
+                     <li>%verdict% - вердикт (OK, WA, TL и т.п.) </li>
+                     
+                  </ul>
+               </div><input class="form-control" id="filename-format" type="text" value="%runid%-%filename%"><button class="btn btn-default btn-sm" id="filename-format-save-btn">Сохранить</button></div>
+            <div class="hide" id="source">
+               <ul class="nav nav-tabs" role="tablist">
+                  <li class="active" role="presentation"><a aria-controls="$src-raw" class="nav-sm active" data-toggle="tab" href="#src-raw" id="raw-src-tab-head" role="tab"><i class="glyphicon glyphicon-eye-open"></i></a></li>
+                  <li role="presentation"><a aria-controls="src-ws" class="nav-sm src-ws-tab-href" data-toggle="tab" href="#src-ws" role="tab">
+                        ¶
+                        </a></li>
+                  <li role="presentation"><a aria-controls="src-hex" class="nav-sm src-hex-tab-href" data-toggle="tab" href="#src-hex" role="tab">
+                        0xFF
+                        </a></li>
+               </ul>
+               <div class="tab-content">
+                  <div class="tab-pane active" data-is-standalone="false" data-run-id="21542454" id="src-raw" role="tabpanel"><pre><code class="python" id="raw-src-pre" style="font-size: small;">a = float(input())
+b = float(input())
+c = float(input())
+
+if (a != 0) and (b != 0) and (c != 0):
+    D = b ** 2 - 4 * a * c
+    if D &gt; 0:
+        x1 = (- b - D ** 0.5) / (2 * a)
+        x2 = (- b + D ** 0.5) / (2 * a)
+        if x1 &gt; x2:
+            x1, x2 = x2, x1
+        print(2, x1, x2)
+    elif D == 0:
+        x = - b / (2 * a)
+        print(1, x)
+else:
+    print(3)
+</code></pre></div>
+                  <div class="tab-pane" id="src-ws" role="tabpanel"><pre class="ws-text" data-is-standalone="false" data-run-id="21542454"></pre></div>
+                  <div class="tab-pane hex-tab" data-is-standalone="false" data-run-id="21542454" id="src-hex" role="tabpanel"></div>
+               </div>
+            </div>
+            <h4><a class="js-link container-toggler" data-container="#diff" href="#">Разница с предыдущей версией</a></h4>
+            <div class="hide" id="diff"><pre><code class="diff" style="font-size: small;">--- 21527720
++++ 21542454
+@@ -1,9 +1,9 @@
+ a = float(input())
+ b = float(input())
+ c = float(input())
+ 
+-if (a != 0) and (c != 0):
++if (a != 0) and (b != 0) and (c != 0):
+     D = b ** 2 - 4 * a * c
+     if D &gt; 0:
+         x1 = (- b - D ** 0.5) / (2 * a)
+         x2 = (- b + D ** 0.5) / (2 * a)
+</code></pre></div>
+            <h4>Чекер до компиляции</h4>
+            <div class="alert alert-success">
+               <h5><a class="js-link container-toggler" data-container="#precompile-1" href="#" style="float: left;">pep8.py</a><div class="text-success" style="padding-left: 20px;">
+                     &nbsp;(ok)
+                     
+                  </div>
+               </h5>
+               <div class="hide" id="precompile-1"></div>
+            </div>
+            <h4><a class="js-link container-toggler" data-container="#compile-log" href="#">Лог компиляции </a></h4>
+            <div class="hide" id="compile-log"><pre><samp>stdout:
+
+
+stderr:
+</samp></pre></div>
+            <h4><a class="js-link container-toggler" href="#" data-container="#common-log">Общий лог</a></h4>
+            <div class="hide" id="common-log">
+               <table class="table table-bordered">
+                  <thead>
+                     <tr>
+                        <th>Уровень</th>
+                        <th>Вывод чекера</th>
+                     </tr>
+                  </thead>
+                  <tbod>
+                     <tr class="info">
+                        <td>info</td>
+                        <td>Executing job : 71ef9b1d-debd-4798-9468-13175d8d43b4 (python3_7_3, 175943/2016_09_17/ViDOJMR847)</td>
+                     </tr>
+                     <tr class="info">
+                        <td>info</td>
+                        <td>Executing tests for problem id [175943/2016_09_17/ViDOJMR847], problem name [Квадратное уравнение - 2] job, problem type [PROBLEM_WITH_CHECKER],
+                           
+                        </td>
+                     </tr>
+                     <tr class="info">
+                        <td>info</td>
+                        <td>Problem extracted at /var/lib/yandex/contest/slave/data-storage/directories/directory-1569146109240-45394</td>
+                     </tr>
+                     <tr class="debug">
+                        <td>debug</td>
+                        <td>Compile and test ticket 71ef9b1d-debd-4798-9468-13175d8d43b4: running pre compile checkers</td>
+                     </tr>
+                     <tr class="debug">
+                        <td>debug</td>
+                        <td>Running precompile checker compiler id: []; main filename: [pep8.py]</td>
+                     </tr>
+                     <tr class="info">
+                        <td>info</td>
+                        <td>directory /var/lib/yandex/contest/invoker/lxc/6b52-d60b-127c-ee75/rootfs/temp/additionalChecking created</td>
+                     </tr>
+                     <tr class="debug">
+                        <td>debug</td>
+                        <td>Saving checker files to [/var/lib/yandex/contest/invoker/lxc/6b52-d60b-127c-ee75/rootfs/temp/additionalChecking]</td>
+                     </tr>
+                     <tr class="debug">
+                        <td>debug</td>
+                        <td>/var/lib/yandex/contest/invoker/lxc/6b52-d60b-127c-ee75/rootfs/temp/additionalChecking/pep8.py with md5 hash 654d8ecbb28081b76efef5fbd624e822</td>
+                     </tr>
+                     <tr class="debug">
+                        <td>debug</td>
+                        <td>Saving source to [/var/lib/yandex/contest/invoker/lxc/6b52-d60b-127c-ee75/rootfs/temp/additionalChecking] with md5 6ee1ab7c9bb3089394afdf8f4ad2cc09</td>
+                     </tr>
+                     <tr class="debug">
+                        <td>debug</td>
+                        <td>Setting permissions</td>
+                     </tr>
+                     <tr class="debug">
+                        <td>debug</td>
+                        <td>chmod 511 and chown com.yandex.contest.invoker.impl.unistd.access.Id@6d62c4de file /temp/additionalChecking/pep8.py</td>
+                     </tr>
+                     <tr class="debug">
+                        <td>debug</td>
+                        <td>chmod 511 and chown com.yandex.contest.invoker.impl.unistd.access.Id@6d62c4de file /temp/additionalChecking/U.py</td>
+                     </tr>
+                     <tr class="debug">
+                        <td>debug</td>
+                        <td>chmod 511 and chown com.yandex.contest.invoker.impl.unistd.access.Id@6d62c4de file /temp/additionalChecking</td>
+                     </tr>
+                     <tr class="debug">
+                        <td>debug</td>
+                        <td>Created process group</td>
+                     </tr>
+                     <tr class="debug">
+                        <td>debug</td>
+                        <td>Create process</td>
+                     </tr>
+                     <tr class="debug">
+                        <td>debug</td>
+                        <td>
+                           Process.
+                           Executable:        /temp/additionalChecking/pep8.py
+                           Working directory: /temp/additionalChecking
+                           Arguments:         [/temp/additionalChecking/pep8.py, U.py]
+                           Environment:       {PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin, LC_ALL=en_US.UTF-8, LANG=en_US.UTF-8,
+                           HOME=/}
+                           Owner:             1010:1010
+                           stream 0           File: "/dev/null" READ_WRITE
+                           stream 1           File: "846b8ed0-7ea5-4e64-87a4-db58ec596a1e" WRITE_ONLY
+                           stream 2           FdAlias: 1
+                           
+                        </td>
+                     </tr>
+                     <tr class="debug">
+                        <td>debug</td>
+                        <td>
+                           Process limits.
+                           Time limit:           3600000
+                           Memory limit:         67108864
+                           Output limit:         8388608
+                           Number of processes:  32
+                        </td>
+                     </tr>
+                     <tr class="debug">
+                        <td>debug</td>
+                        <td>
+                           Process executed '/temp/additionalChecking/pep8.py'
+                           Status      OK
+                           ExitStatus  0
+                           Memory      4919296 B
+                           User time   50 ms
+                           Time        60270974 ns
+                           Term sig    null
+                           
+                        </td>
+                     </tr>
+                     <tr class="debug">
+                        <td>debug</td>
+                        <td>Additional check compiler id: []; main filename: [pep8.py] executed with verdict OK</td>
+                     </tr>
+                     <tr class="debug">
+                        <td>debug</td>
+                        <td>Passed</td>
+                     </tr>
+                     <tr class="debug">
+                        <td>debug</td>
+                        <td>Executed 1 precompile checkers. Total is 1</td>
+                     </tr>
+                     <tr class="debug">
+                        <td>debug</td>
+                        <td>Running compilation Compile and test ticket 71ef9b1d-debd-4798-9468-13175d8d43b4</td>
+                     </tr>
+                     <tr class="info">
+                        <td>info</td>
+                        <td>Compiling : compiler id=python3_7_3, compiler name=Python 3.7.3</td>
+                     </tr>
+                     <tr class="info">
+                        <td>info</td>
+                        <td>Compiling directory created: [/var/lib/yandex/contest/invoker/lxc/6b52-d60b-127c-ee75/rootfs/temp/compiling] with perms 777</td>
+                     </tr>
+                     <tr class="info">
+                        <td>info</td>
+                        <td>Source saved to [/var/lib/yandex/contest/invoker/lxc/6b52-d60b-127c-ee75/rootfs/temp/compiling] with md5 hash 6ee1ab7c9bb3089394afdf8f4ad2cc09</td>
+                     </tr>
+                     <tr class="info">
+                        <td>info</td>
+                        <td>Compiling script saved to [/var/lib/yandex/contest/invoker/lxc/6b52-d60b-127c-ee75/rootfs/temp/compiling] with md5 hash 826ff98fff31ed797cec6b47ed1a53dc</td>
+                     </tr>
+                     <tr class="info">
+                        <td>info</td>
+                        <td>chmod compile script [/temp/compiling/compilingScript] with 777</td>
+                     </tr>
+                     <tr class="info">
+                        <td>info</td>
+                        <td>Created process group.</td>
+                     </tr>
+                     <tr class="info">
+                        <td>info</td>
+                        <td>Creating process settings [/temp/compiling/U.py, /temp/compiling/3bb3952b-031b-495c-8e56-8a46bce3d2d8, /temp/compiling/015094dd-3950-4c78-9e7d-3a12c4281044,
+                           /temp/compiling/compilingScript]
+                        </td>
+                     </tr>
+                     <tr class="debug">
+                        <td>debug</td>
+                        <td>
+                           Process.
+                           Executable:        /temp/compiling/compilingScript
+                           Working directory: /temp/compiling
+                           Arguments:         [/temp/compiling/compilingScript, --compile, /temp/compiling/U.py, /temp/compiling/3bb3952b-031b-495c-8e56-8a46bce3d2d8]
+                           Environment:       {PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin, LC_ALL=en_US.UTF-8, LANG=en_US.UTF-8,
+                           HOME=/}
+                           Owner:             65535:65535
+                           stream 0           File: "/dev/null" READ_WRITE
+                           stream 1           File: "/temp/compiling/015094dd-3950-4c78-9e7d-3a12c4281044_out" WRITE_ONLY
+                           stream 2           File: "/temp/compiling/015094dd-3950-4c78-9e7d-3a12c4281044_err" WRITE_ONLY
+                           
+                        </td>
+                     </tr>
+                     <tr class="debug">
+                        <td>debug</td>
+                        <td>
+                           Process limits.
+                           Time limit:           60000
+                           Memory limit:         1598029824
+                           Output limit:         100000000
+                           Number of processes:  32
+                        </td>
+                     </tr>
+                     <tr class="debug">
+                        <td>debug</td>
+                        <td>
+                           Process executed '/temp/compiling/compilingScript'
+                           Status      OK
+                           ExitStatus  0
+                           Memory      4722688 B
+                           User time   30 ms
+                           Time        40439686 ns
+                           Term sig    null
+                           
+                        </td>
+                     </tr>
+                     <tr class="info">
+                        <td>info</td>
+                        <td>Process group result: OK</td>
+                     </tr>
+                     <tr class="info">
+                        <td>info</td>
+                        <td>Compiled OK</td>
+                     </tr>
+                     <tr class="debug">
+                        <td>debug</td>
+                        <td>Compilation OK</td>
+                     </tr>
+                     <tr class="debug">
+                        <td>debug</td>
+                        <td>Running testing for [Compile and test ticket 71ef9b1d-debd-4798-9468-13175d8d43b4]; compiled source [3bb3952b-031b-495c-8e56-8a46bce3d2d8]</td>
+                     </tr>
+                     <tr class="info">
+                        <td>info</td>
+                        <td>Executing tests for problem id [175943/2016_09_17/ViDOJMR847], problem name [Квадратное уравнение - 2] job, problem type [PROBLEM_WITH_CHECKER],
+                           
+                        </td>
+                     </tr>
+                     <tr class="info">
+                        <td>info</td>
+                        <td>Compiler id python3_7_3/name Python 3.7.3</td>
+                     </tr>
+                     <tr class="info">
+                        <td>info</td>
+                        <td>Checker settings: {"__type":"standardChecker","limits":{"timeLimitMillis":10000,"idlenessLimitMillis":10000,"memoryLimit":268435456,"outputLimit":268435456},"env":{},"checkerId":"cmp_double_seq","eps":1.0E-4,"absolute":false}</td>
+                     </tr>
+                     <tr class="info">
+                        <td>info</td>
+                        <td>Created checker executor: StandardCheckerExecutor</td>
+                     </tr>
+                     <tr class="info">
+                        <td>info</td>
+                        <td>Simple problem executor</td>
+                     </tr>
+                     <tr class="debug">
+                        <td>debug</td>
+                        <td>Saving include files to [/var/lib/yandex/contest/invoker/lxc/6b52-d60b-127c-ee75/rootfs/temp/executing]</td>
+                     </tr>
+                     <tr class="info">
+                        <td>info</td>
+                        <td>Test set name [samples]; index 0; size 3</td>
+                     </tr>
+                     <tr class="info">
+                        <td>info</td>
+                        <td>Test set process strategy: stop on first fail = true, stop on sample fail = false</td>
+                     </tr>
+                     <tr class="info">
+                        <td>info</td>
+                        <td>Test set name [All tests]; index 1; size 19</td>
+                     </tr>
+                     <tr class="info">
+                        <td>info</td>
+                        <td>Test set process strategy: stop on first fail = true, stop on sample fail = false</td>
+                     </tr>
+                     <tr class="info">
+                        <td>info</td>
+                        <td>Stopping on first fail</td>
+                     </tr>
+                     <tr class="info">
+                        <td>info</td>
+                        <td>Test executor ended up with status: null</td>
+                     </tr>
+                     <tr class="info">
+                        <td>info</td>
+                        <td>Post process check is not set</td>
+                     </tr>
+                     <tr class="info">
+                        <td>info</td>
+                        <td>Destroying container</td>
+                     </tr>
+                  </tbod>
+               </table>
+            </div>
+            <h4><a data-run-id="21542454" data-url="/admin/run-report/download-checker-log" href="#" id="download-checker-link">Скачать лог тестирования</a></h4>
+            <div style="width: 100%; float: left; display: flex;">
+               <table class="table table-condensed table-bordered" style="width: 30%; float: left;">
+                  <tr>
+                     <th>Номер теста</th>
+                     <th>Вердикт</th>
+                     <th>Баллы</th>
+                     <th>Ресурсы</th>
+                  </tr>
+                  <tr class="&#xA;                    success&#xA;                ">
+                     <td><a href="#test_1">tests/01</a></td>
+                     <td>OK</td>
+                     <td>-</td>
+                     <td>48ms / 3.9 MB</td>
+                  </tr>
+                  <tr class="&#xA;                    success&#xA;                ">
+                     <td><a href="#test_2">tests/02</a></td>
+                     <td>OK</td>
+                     <td>-</td>
+                     <td>47ms / 3.9 MB</td>
+                  </tr>
+                  <tr class="&#xA;                    success&#xA;                ">
+                     <td><a href="#test_3">tests/03</a></td>
+                     <td>OK</td>
+                     <td>-</td>
+                     <td>47ms / 3.9 MB</td>
+                  </tr>
+               </table>
+               <table class="table table-condensed table-bordered" style="width: 30%; float: left; margin-left: 5%; margin-right: 5%;">
+                  <tr>
+                     <th>Номер теста</th>
+                     <th>Вердикт</th>
+                     <th>Баллы</th>
+                     <th>Ресурсы</th>
+                  </tr>
+                  <tr class="&#xA;                    success&#xA;                ">
+                     <td><a href="#test_4">tests/01</a></td>
+                     <td>OK</td>
+                     <td>-</td>
+                     <td>47ms / 3.9 MB</td>
+                  </tr>
+                  <tr class="&#xA;                    success&#xA;                ">
+                     <td><a href="#test_5">tests/02</a></td>
+                     <td>OK</td>
+                     <td>-</td>
+                     <td>47ms / 3.9 MB</td>
+                  </tr>
+                  <tr class="&#xA;                    success&#xA;                ">
+                     <td><a href="#test_6">tests/03</a></td>
+                     <td>OK</td>
+                     <td>-</td>
+                     <td>47ms / 3.9 MB</td>
+                  </tr>
+               </table>
+               <table class="table table-condensed table-bordered" style="width: 30%;">
+                  <tr>
+                     <th>Номер теста</th>
+                     <th>Вердикт</th>
+                     <th>Баллы</th>
+                     <th>Ресурсы</th>
+                  </tr>
+                  <tr class="&#xA;                    success&#xA;                ">
+                     <td><a href="#test_7">tests/04</a></td>
+                     <td>OK</td>
+                     <td>-</td>
+                     <td>47ms / 3.9 MB</td>
+                  </tr>
+                  <tr class="&#xA;                    danger&#xA;                ">
+                     <td><a href="#test_8">tests/05</a></td>
+                     <td>WA</td>
+                     <td>-</td>
+                     <td>44ms / 3.9 MB</td>
+                  </tr>
+               </table>
+            </div>
+            <div width="100%">
+               <hr><a name="test_1"></a><h5>Тест <i class="icon-white"></i>tests/01<small><i class="icon-white"></i>Набор тестов<i class="icon-white"></i>
+                     '
+                     <a href="/admin/ng#/problem/175943%2F2016_09_17%2FViDOJMR847#test-set-1-panel">samples</a>
+                     '
+                     </small></h5>
+               <div style="width: 100%; font-weight: bold; margin-top: 15px; margin-bottom: 5px">Ввод<a href="/admin/run-report/download?action=input&amp;runId=21542454&amp;testname=tests/01" style="margin-left: 15px;">Скачать</a></div>
+               <div>
+                  <ul class="nav nav-tabs" role="tablist">
+                     <li class="active" role="presentation"><a aria-controls="$tt178617-raw" class="nav-sm" data-toggle="tab" href="#tt178617-raw" role="tab"><i class="glyphicon glyphicon-eye-open"></i></a></li>
+                     <li role="presentation"><a aria-controls="$tt178617-ws" class="ws-tab-href nav-sm" data-toggle="tab" href="#tt178617-ws" role="tab">
+                           ¶
+                           </a></li>
+                     <li role="presentation"><a aria-controls="$tt178617-hex" class="hex-tab-href nav-sm" data-toggle="tab" href="#tt178617-hex" role="tab">
+                           0xFF
+                           </a></li>
+                  </ul>
+                  <div class="tab-content">
+                     <div class="tab-pane active" id="tt178617-raw" role="tabpanel"><pre><samp id="tt178617" style="white-space: pre;">1
+-1
+-2
+</samp></pre></div>
+                     <div class="tab-pane" id="tt178617-ws" role="tabpanel"><pre class="ws-text" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="1" data-type="input"></pre></div>
+                     <div class="tab-pane hex-tab" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="1" data-type="input" id="tt178617-hex" role="tabpanel"><pre class="hex-text" data-value="tt178617"></pre></div>
+                  </div>
+               </div>
+               <div style="width: 100%; font-weight: bold; margin-top: 15px; margin-bottom: 5px">Вывод<a href="/admin/run-report/download-test-output?runId=21542454&amp;testname=tests/01" style="margin-left: 15px;">Скачать</a></div>
+               <div>
+                  <ul class="nav nav-tabs" role="tablist">
+                     <li class="active" role="presentation"><a aria-controls="$tt178618-raw" class="nav-sm" data-toggle="tab" href="#tt178618-raw" role="tab"><i class="glyphicon glyphicon-eye-open"></i></a></li>
+                     <li role="presentation"><a aria-controls="$tt178618-ws" class="ws-tab-href nav-sm" data-toggle="tab" href="#tt178618-ws" role="tab">
+                           ¶
+                           </a></li>
+                     <li role="presentation"><a aria-controls="$tt178618-hex" class="hex-tab-href nav-sm" data-toggle="tab" href="#tt178618-hex" role="tab">
+                           0xFF
+                           </a></li>
+                  </ul>
+                  <div class="tab-content">
+                     <div class="tab-pane active" id="tt178618-raw" role="tabpanel"><pre><samp id="tt178618" style="white-space: pre;">2 -1.0 2.0
+</samp></pre></div>
+                     <div class="tab-pane" id="tt178618-ws" role="tabpanel"><pre class="ws-text" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="1" data-type="output"></pre></div>
+                     <div class="tab-pane hex-tab" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="1" data-type="output" id="tt178618-hex" role="tabpanel"><pre class="hex-text" data-value="tt178618"></pre></div>
+                  </div>
+               </div>
+               <div style="width: 100%; font-weight: bold; margin-top: 15px; margin-bottom: 5px">Ответ<a href="/admin/run-report/download?action=answer&amp;runId=21542454&amp;testname=tests/01" style="margin-left: 15px;">Скачать</a></div>
+               <div>
+                  <ul class="nav nav-tabs" role="tablist">
+                     <li class="active" role="presentation"><a aria-controls="$tt178619-raw" class="nav-sm" data-toggle="tab" href="#tt178619-raw" role="tab"><i class="glyphicon glyphicon-eye-open"></i></a></li>
+                     <li role="presentation"><a aria-controls="$tt178619-ws" class="ws-tab-href nav-sm" data-toggle="tab" href="#tt178619-ws" role="tab">
+                           ¶
+                           </a></li>
+                     <li role="presentation"><a aria-controls="$tt178619-hex" class="hex-tab-href nav-sm" data-toggle="tab" href="#tt178619-hex" role="tab">
+                           0xFF
+                           </a></li>
+                  </ul>
+                  <div class="tab-content">
+                     <div class="tab-pane active" id="tt178619-raw" role="tabpanel"><pre><samp id="tt178619" style="white-space: pre;">2 -1 2
+</samp></pre></div>
+                     <div class="tab-pane" id="tt178619-ws" role="tabpanel"><pre class="ws-text" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="1" data-type="answer"></pre></div>
+                     <div class="tab-pane hex-tab" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="1" data-type="answer" id="tt178619-hex" role="tabpanel"><pre class="hex-text" data-value="tt178619"></pre></div>
+                  </div>
+               </div>
+               <div style="width: 100%; font-weight: bold; margin-top: 15px; margin-bottom: 5px">Сообщение чекера</div>
+               <div>
+                  <ul class="nav nav-tabs" role="tablist">
+                     <li class="active" role="presentation"><a aria-controls="$tt178620-raw" class="nav-sm" data-toggle="tab" href="#tt178620-raw" role="tab"><i class="glyphicon glyphicon-eye-open"></i></a></li>
+                     <li role="presentation"><a aria-controls="$tt178620-ws" class="ws-tab-href nav-sm" data-toggle="tab" href="#tt178620-ws" role="tab">
+                           ¶
+                           </a></li>
+                     <li role="presentation"><a aria-controls="$tt178620-hex" class="hex-tab-href nav-sm" data-toggle="tab" href="#tt178620-hex" role="tab">
+                           0xFF
+                           </a></li>
+                  </ul>
+                  <div class="tab-content">
+                     <div class="tab-pane active" id="tt178620-raw" role="tabpanel"><pre><samp id="tt178620" style="white-space: pre;">OK
+</samp></pre></div>
+                     <div class="tab-pane" id="tt178620-ws" role="tabpanel"><pre class="ws-text" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="1" data-type="checker"></pre></div>
+                     <div class="tab-pane hex-tab" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="1" data-type="checker" id="tt178620-hex" role="tabpanel"><pre class="hex-text" data-value="tt178620"></pre></div>
+                  </div>
+               </div>
+               <h4><a class="js-link container-toggler" href="#" data-container="#log-of-tests01">Log of tests/01</a></h4>
+               <div class="hide" id="log-of-tests01">
+                  <table class="table table-bordered">
+                     <thead>
+                        <tr>
+                           <th>Уровень</th>
+                           <th>Вывод чекера</th>
+                        </tr>
+                     </thead>
+                     <tbod>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>Test number 0 in test set 0 has file name [tests/01]</td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>tests/01 -&gt; tests/01.a</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Running solution execution</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Reading input from '/var/lib/yandex/contest/slave/data-storage/directories/directory-1569146109240-45394/tests/01'</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Reading answer from '/var/lib/yandex/contest/slave/data-storage/directories/directory-1569146109240-45394/tests/01.a'</td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>create output file [/temp/executing/output.txt] with perms rw------- and chown [1007:1008] executor SimpleProblemExecutor</td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>create error file [/temp/executing/9c290c3b-7955-4185-876e-7ae7ec2d1a5c] with perms --------- and chown [1007:1008] executor
+                              SimpleProblemExecutor
+                           </td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Created solution process</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>
+                              Process.
+                              Executable:        /temp/executing/executingScript
+                              Working directory: /temp/executing
+                              Arguments:         [/temp/executing/executingScript, --execute, U.py, 3bb3952b-031b-495c-8e56-8a46bce3d2d8]
+                              Environment:       {PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin, LC_ALL=en_US.UTF-8, LANG=en_US.UTF-8,
+                              HOME=/}
+                              Owner:             1007:1008
+                              stream 0           File: "/temp/executing/input.txt" READ_ONLY
+                              stream 1           File: "/temp/executing/output.txt" WRITE_ONLY
+                              stream 2           File: "/temp/executing/9c290c3b-7955-4185-876e-7ae7ec2d1a5c" WRITE_ONLY
+                              
+                           </td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>
+                              Process limits.
+                              Time limit:           2000
+                              Memory limit:         67108864
+                              Output limit:         67108864
+                              Number of processes:  1
+                           </td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>Process group executed: OK</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>
+                              Process executed '/temp/executing/executingScript'
+                              Status      OK
+                              ExitStatus  0
+                              Memory      4071424 B
+                              User time   40 ms
+                              Time        48093887 ns
+                              Term sig    null
+                              
+                           </td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Copying files for debug</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Executed without errors</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Running checker</td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>OK ( 48 ms / 532 ms )</td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>verdict OK test 0 in test set 0</td>
+                        </tr>
+                     </tbod>
+                  </table>
+               </div>
+               <hr><a name="test_2"></a><h5>Тест <i class="icon-white"></i>tests/02<small><i class="icon-white"></i>Набор тестов<i class="icon-white"></i>
+                     '
+                     <a href="/admin/ng#/problem/175943%2F2016_09_17%2FViDOJMR847#test-set-1-panel">samples</a>
+                     '
+                     </small></h5>
+               <div style="width: 100%; font-weight: bold; margin-top: 15px; margin-bottom: 5px">Ввод<a href="/admin/run-report/download?action=input&amp;runId=21542454&amp;testname=tests/02" style="margin-left: 15px;">Скачать</a></div>
+               <div>
+                  <ul class="nav nav-tabs" role="tablist">
+                     <li class="active" role="presentation"><a aria-controls="$tt178621-raw" class="nav-sm" data-toggle="tab" href="#tt178621-raw" role="tab"><i class="glyphicon glyphicon-eye-open"></i></a></li>
+                     <li role="presentation"><a aria-controls="$tt178621-ws" class="ws-tab-href nav-sm" data-toggle="tab" href="#tt178621-ws" role="tab">
+                           ¶
+                           </a></li>
+                     <li role="presentation"><a aria-controls="$tt178621-hex" class="hex-tab-href nav-sm" data-toggle="tab" href="#tt178621-hex" role="tab">
+                           0xFF
+                           </a></li>
+                  </ul>
+                  <div class="tab-content">
+                     <div class="tab-pane active" id="tt178621-raw" role="tabpanel"><pre><samp id="tt178621" style="white-space: pre;">1
+2
+1
+</samp></pre></div>
+                     <div class="tab-pane" id="tt178621-ws" role="tabpanel"><pre class="ws-text" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="2" data-type="input"></pre></div>
+                     <div class="tab-pane hex-tab" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="2" data-type="input" id="tt178621-hex" role="tabpanel"><pre class="hex-text" data-value="tt178621"></pre></div>
+                  </div>
+               </div>
+               <div style="width: 100%; font-weight: bold; margin-top: 15px; margin-bottom: 5px">Вывод<a href="/admin/run-report/download-test-output?runId=21542454&amp;testname=tests/02" style="margin-left: 15px;">Скачать</a></div>
+               <div>
+                  <ul class="nav nav-tabs" role="tablist">
+                     <li class="active" role="presentation"><a aria-controls="$tt178622-raw" class="nav-sm" data-toggle="tab" href="#tt178622-raw" role="tab"><i class="glyphicon glyphicon-eye-open"></i></a></li>
+                     <li role="presentation"><a aria-controls="$tt178622-ws" class="ws-tab-href nav-sm" data-toggle="tab" href="#tt178622-ws" role="tab">
+                           ¶
+                           </a></li>
+                     <li role="presentation"><a aria-controls="$tt178622-hex" class="hex-tab-href nav-sm" data-toggle="tab" href="#tt178622-hex" role="tab">
+                           0xFF
+                           </a></li>
+                  </ul>
+                  <div class="tab-content">
+                     <div class="tab-pane active" id="tt178622-raw" role="tabpanel"><pre><samp id="tt178622" style="white-space: pre;">1 -1.0
+</samp></pre></div>
+                     <div class="tab-pane" id="tt178622-ws" role="tabpanel"><pre class="ws-text" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="2" data-type="output"></pre></div>
+                     <div class="tab-pane hex-tab" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="2" data-type="output" id="tt178622-hex" role="tabpanel"><pre class="hex-text" data-value="tt178622"></pre></div>
+                  </div>
+               </div>
+               <div style="width: 100%; font-weight: bold; margin-top: 15px; margin-bottom: 5px">Ответ<a href="/admin/run-report/download?action=answer&amp;runId=21542454&amp;testname=tests/02" style="margin-left: 15px;">Скачать</a></div>
+               <div>
+                  <ul class="nav nav-tabs" role="tablist">
+                     <li class="active" role="presentation"><a aria-controls="$tt178623-raw" class="nav-sm" data-toggle="tab" href="#tt178623-raw" role="tab"><i class="glyphicon glyphicon-eye-open"></i></a></li>
+                     <li role="presentation"><a aria-controls="$tt178623-ws" class="ws-tab-href nav-sm" data-toggle="tab" href="#tt178623-ws" role="tab">
+                           ¶
+                           </a></li>
+                     <li role="presentation"><a aria-controls="$tt178623-hex" class="hex-tab-href nav-sm" data-toggle="tab" href="#tt178623-hex" role="tab">
+                           0xFF
+                           </a></li>
+                  </ul>
+                  <div class="tab-content">
+                     <div class="tab-pane active" id="tt178623-raw" role="tabpanel"><pre><samp id="tt178623" style="white-space: pre;">1 -1
+</samp></pre></div>
+                     <div class="tab-pane" id="tt178623-ws" role="tabpanel"><pre class="ws-text" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="2" data-type="answer"></pre></div>
+                     <div class="tab-pane hex-tab" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="2" data-type="answer" id="tt178623-hex" role="tabpanel"><pre class="hex-text" data-value="tt178623"></pre></div>
+                  </div>
+               </div>
+               <div style="width: 100%; font-weight: bold; margin-top: 15px; margin-bottom: 5px">Сообщение чекера</div>
+               <div>
+                  <ul class="nav nav-tabs" role="tablist">
+                     <li class="active" role="presentation"><a aria-controls="$tt178624-raw" class="nav-sm" data-toggle="tab" href="#tt178624-raw" role="tab"><i class="glyphicon glyphicon-eye-open"></i></a></li>
+                     <li role="presentation"><a aria-controls="$tt178624-ws" class="ws-tab-href nav-sm" data-toggle="tab" href="#tt178624-ws" role="tab">
+                           ¶
+                           </a></li>
+                     <li role="presentation"><a aria-controls="$tt178624-hex" class="hex-tab-href nav-sm" data-toggle="tab" href="#tt178624-hex" role="tab">
+                           0xFF
+                           </a></li>
+                  </ul>
+                  <div class="tab-content">
+                     <div class="tab-pane active" id="tt178624-raw" role="tabpanel"><pre><samp id="tt178624" style="white-space: pre;">OK
+</samp></pre></div>
+                     <div class="tab-pane" id="tt178624-ws" role="tabpanel"><pre class="ws-text" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="2" data-type="checker"></pre></div>
+                     <div class="tab-pane hex-tab" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="2" data-type="checker" id="tt178624-hex" role="tabpanel"><pre class="hex-text" data-value="tt178624"></pre></div>
+                  </div>
+               </div>
+               <h4><a class="js-link container-toggler" href="#" data-container="#log-of-tests02">Log of tests/02</a></h4>
+               <div class="hide" id="log-of-tests02">
+                  <table class="table table-bordered">
+                     <thead>
+                        <tr>
+                           <th>Уровень</th>
+                           <th>Вывод чекера</th>
+                        </tr>
+                     </thead>
+                     <tbod>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>Test number 1 in test set 0 has file name [tests/02]</td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>tests/02 -&gt; tests/02.a</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Running solution execution</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Reading input from '/var/lib/yandex/contest/slave/data-storage/directories/directory-1569146109240-45394/tests/02'</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Reading answer from '/var/lib/yandex/contest/slave/data-storage/directories/directory-1569146109240-45394/tests/02.a'</td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>create output file [/temp/executing/output.txt] with perms rw------- and chown [1007:1008] executor SimpleProblemExecutor</td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>create error file [/temp/executing/9c290c3b-7955-4185-876e-7ae7ec2d1a5c] with perms --------- and chown [1007:1008] executor
+                              SimpleProblemExecutor
+                           </td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Created solution process</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>
+                              Process.
+                              Executable:        /temp/executing/executingScript
+                              Working directory: /temp/executing
+                              Arguments:         [/temp/executing/executingScript, --execute, U.py, 3bb3952b-031b-495c-8e56-8a46bce3d2d8]
+                              Environment:       {PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin, LC_ALL=en_US.UTF-8, LANG=en_US.UTF-8,
+                              HOME=/}
+                              Owner:             1007:1008
+                              stream 0           File: "/temp/executing/input.txt" READ_ONLY
+                              stream 1           File: "/temp/executing/output.txt" WRITE_ONLY
+                              stream 2           File: "/temp/executing/9c290c3b-7955-4185-876e-7ae7ec2d1a5c" WRITE_ONLY
+                              
+                           </td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>
+                              Process limits.
+                              Time limit:           2000
+                              Memory limit:         67108864
+                              Output limit:         67108864
+                              Number of processes:  1
+                           </td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>Process group executed: OK</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>
+                              Process executed '/temp/executing/executingScript'
+                              Status      OK
+                              ExitStatus  0
+                              Memory      4079616 B
+                              User time   40 ms
+                              Time        47749878 ns
+                              Term sig    null
+                              
+                           </td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Copying files for debug</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Executed without errors</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Running checker</td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>OK ( 47 ms / 515 ms )</td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>verdict OK test 1 in test set 0</td>
+                        </tr>
+                     </tbod>
+                  </table>
+               </div>
+               <hr><a name="test_3"></a><h5>Тест <i class="icon-white"></i>tests/03<small><i class="icon-white"></i>Набор тестов<i class="icon-white"></i>
+                     '
+                     <a href="/admin/ng#/problem/175943%2F2016_09_17%2FViDOJMR847#test-set-1-panel">samples</a>
+                     '
+                     </small></h5>
+               <div style="width: 100%; font-weight: bold; margin-top: 15px; margin-bottom: 5px">Ввод<a href="/admin/run-report/download?action=input&amp;runId=21542454&amp;testname=tests/03" style="margin-left: 15px;">Скачать</a></div>
+               <div>
+                  <ul class="nav nav-tabs" role="tablist">
+                     <li class="active" role="presentation"><a aria-controls="$tt178625-raw" class="nav-sm" data-toggle="tab" href="#tt178625-raw" role="tab"><i class="glyphicon glyphicon-eye-open"></i></a></li>
+                     <li role="presentation"><a aria-controls="$tt178625-ws" class="ws-tab-href nav-sm" data-toggle="tab" href="#tt178625-ws" role="tab">
+                           ¶
+                           </a></li>
+                     <li role="presentation"><a aria-controls="$tt178625-hex" class="hex-tab-href nav-sm" data-toggle="tab" href="#tt178625-hex" role="tab">
+                           0xFF
+                           </a></li>
+                  </ul>
+                  <div class="tab-content">
+                     <div class="tab-pane active" id="tt178625-raw" role="tabpanel"><pre><samp id="tt178625" style="white-space: pre;">1
+-7.5
+3
+</samp></pre></div>
+                     <div class="tab-pane" id="tt178625-ws" role="tabpanel"><pre class="ws-text" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="3" data-type="input"></pre></div>
+                     <div class="tab-pane hex-tab" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="3" data-type="input" id="tt178625-hex" role="tabpanel"><pre class="hex-text" data-value="tt178625"></pre></div>
+                  </div>
+               </div>
+               <div style="width: 100%; font-weight: bold; margin-top: 15px; margin-bottom: 5px">Вывод<a href="/admin/run-report/download-test-output?runId=21542454&amp;testname=tests/03" style="margin-left: 15px;">Скачать</a></div>
+               <div>
+                  <ul class="nav nav-tabs" role="tablist">
+                     <li class="active" role="presentation"><a aria-controls="$tt178626-raw" class="nav-sm" data-toggle="tab" href="#tt178626-raw" role="tab"><i class="glyphicon glyphicon-eye-open"></i></a></li>
+                     <li role="presentation"><a aria-controls="$tt178626-ws" class="ws-tab-href nav-sm" data-toggle="tab" href="#tt178626-ws" role="tab">
+                           ¶
+                           </a></li>
+                     <li role="presentation"><a aria-controls="$tt178626-hex" class="hex-tab-href nav-sm" data-toggle="tab" href="#tt178626-hex" role="tab">
+                           0xFF
+                           </a></li>
+                  </ul>
+                  <div class="tab-content">
+                     <div class="tab-pane active" id="tt178626-raw" role="tabpanel"><pre><samp id="tt178626" style="white-space: pre;">2 0.4239663260874824 7.076033673912518
+</samp></pre></div>
+                     <div class="tab-pane" id="tt178626-ws" role="tabpanel"><pre class="ws-text" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="3" data-type="output"></pre></div>
+                     <div class="tab-pane hex-tab" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="3" data-type="output" id="tt178626-hex" role="tabpanel"><pre class="hex-text" data-value="tt178626"></pre></div>
+                  </div>
+               </div>
+               <div style="width: 100%; font-weight: bold; margin-top: 15px; margin-bottom: 5px">Ответ<a href="/admin/run-report/download?action=answer&amp;runId=21542454&amp;testname=tests/03" style="margin-left: 15px;">Скачать</a></div>
+               <div>
+                  <ul class="nav nav-tabs" role="tablist">
+                     <li class="active" role="presentation"><a aria-controls="$tt178627-raw" class="nav-sm" data-toggle="tab" href="#tt178627-raw" role="tab"><i class="glyphicon glyphicon-eye-open"></i></a></li>
+                     <li role="presentation"><a aria-controls="$tt178627-ws" class="ws-tab-href nav-sm" data-toggle="tab" href="#tt178627-ws" role="tab">
+                           ¶
+                           </a></li>
+                     <li role="presentation"><a aria-controls="$tt178627-hex" class="hex-tab-href nav-sm" data-toggle="tab" href="#tt178627-hex" role="tab">
+                           0xFF
+                           </a></li>
+                  </ul>
+                  <div class="tab-content">
+                     <div class="tab-pane active" id="tt178627-raw" role="tabpanel"><pre><samp id="tt178627" style="white-space: pre;">2 0.423966 7.07603
+</samp></pre></div>
+                     <div class="tab-pane" id="tt178627-ws" role="tabpanel"><pre class="ws-text" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="3" data-type="answer"></pre></div>
+                     <div class="tab-pane hex-tab" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="3" data-type="answer" id="tt178627-hex" role="tabpanel"><pre class="hex-text" data-value="tt178627"></pre></div>
+                  </div>
+               </div>
+               <div style="width: 100%; font-weight: bold; margin-top: 15px; margin-bottom: 5px">Сообщение чекера</div>
+               <div>
+                  <ul class="nav nav-tabs" role="tablist">
+                     <li class="active" role="presentation"><a aria-controls="$tt178628-raw" class="nav-sm" data-toggle="tab" href="#tt178628-raw" role="tab"><i class="glyphicon glyphicon-eye-open"></i></a></li>
+                     <li role="presentation"><a aria-controls="$tt178628-ws" class="ws-tab-href nav-sm" data-toggle="tab" href="#tt178628-ws" role="tab">
+                           ¶
+                           </a></li>
+                     <li role="presentation"><a aria-controls="$tt178628-hex" class="hex-tab-href nav-sm" data-toggle="tab" href="#tt178628-hex" role="tab">
+                           0xFF
+                           </a></li>
+                  </ul>
+                  <div class="tab-content">
+                     <div class="tab-pane active" id="tt178628-raw" role="tabpanel"><pre><samp id="tt178628" style="white-space: pre;">OK
+</samp></pre></div>
+                     <div class="tab-pane" id="tt178628-ws" role="tabpanel"><pre class="ws-text" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="3" data-type="checker"></pre></div>
+                     <div class="tab-pane hex-tab" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="3" data-type="checker" id="tt178628-hex" role="tabpanel"><pre class="hex-text" data-value="tt178628"></pre></div>
+                  </div>
+               </div>
+               <h4><a class="js-link container-toggler" href="#" data-container="#log-of-tests03">Log of tests/03</a></h4>
+               <div class="hide" id="log-of-tests03">
+                  <table class="table table-bordered">
+                     <thead>
+                        <tr>
+                           <th>Уровень</th>
+                           <th>Вывод чекера</th>
+                        </tr>
+                     </thead>
+                     <tbod>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>Test number 2 in test set 0 has file name [tests/03]</td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>tests/03 -&gt; tests/03.a</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Running solution execution</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Reading input from '/var/lib/yandex/contest/slave/data-storage/directories/directory-1569146109240-45394/tests/03'</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Reading answer from '/var/lib/yandex/contest/slave/data-storage/directories/directory-1569146109240-45394/tests/03.a'</td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>create output file [/temp/executing/output.txt] with perms rw------- and chown [1007:1008] executor SimpleProblemExecutor</td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>create error file [/temp/executing/9c290c3b-7955-4185-876e-7ae7ec2d1a5c] with perms --------- and chown [1007:1008] executor
+                              SimpleProblemExecutor
+                           </td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Created solution process</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>
+                              Process.
+                              Executable:        /temp/executing/executingScript
+                              Working directory: /temp/executing
+                              Arguments:         [/temp/executing/executingScript, --execute, U.py, 3bb3952b-031b-495c-8e56-8a46bce3d2d8]
+                              Environment:       {PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin, LC_ALL=en_US.UTF-8, LANG=en_US.UTF-8,
+                              HOME=/}
+                              Owner:             1007:1008
+                              stream 0           File: "/temp/executing/input.txt" READ_ONLY
+                              stream 1           File: "/temp/executing/output.txt" WRITE_ONLY
+                              stream 2           File: "/temp/executing/9c290c3b-7955-4185-876e-7ae7ec2d1a5c" WRITE_ONLY
+                              
+                           </td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>
+                              Process limits.
+                              Time limit:           2000
+                              Memory limit:         67108864
+                              Output limit:         67108864
+                              Number of processes:  1
+                           </td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>Process group executed: OK</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>
+                              Process executed '/temp/executing/executingScript'
+                              Status      OK
+                              ExitStatus  0
+                              Memory      4087808 B
+                              User time   40 ms
+                              Time        47728475 ns
+                              Term sig    null
+                              
+                           </td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Copying files for debug</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Executed without errors</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Running checker</td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>OK ( 47 ms / 527 ms )</td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>verdict OK test 2 in test set 0</td>
+                        </tr>
+                     </tbod>
+                  </table>
+               </div>
+               <hr><a name="test_4"></a><h5>Тест <i class="icon-white"></i>tests/01<small><i class="icon-white"></i>Набор тестов<i class="icon-white"></i>
+                     '
+                     <a href="/admin/ng#/problem/175943%2F2016_09_17%2FViDOJMR847#test-set-2-panel">All tests</a>
+                     '
+                     </small></h5>
+               <div style="width: 100%; font-weight: bold; margin-top: 15px; margin-bottom: 5px">Ввод<a href="/admin/run-report/download?action=input&amp;runId=21542454&amp;testname=tests/01" style="margin-left: 15px;">Скачать</a></div>
+               <div>
+                  <ul class="nav nav-tabs" role="tablist">
+                     <li class="active" role="presentation"><a aria-controls="$tt178629-raw" class="nav-sm" data-toggle="tab" href="#tt178629-raw" role="tab"><i class="glyphicon glyphicon-eye-open"></i></a></li>
+                     <li role="presentation"><a aria-controls="$tt178629-ws" class="ws-tab-href nav-sm" data-toggle="tab" href="#tt178629-ws" role="tab">
+                           ¶
+                           </a></li>
+                     <li role="presentation"><a aria-controls="$tt178629-hex" class="hex-tab-href nav-sm" data-toggle="tab" href="#tt178629-hex" role="tab">
+                           0xFF
+                           </a></li>
+                  </ul>
+                  <div class="tab-content">
+                     <div class="tab-pane active" id="tt178629-raw" role="tabpanel"><pre><samp id="tt178629" style="white-space: pre;">1
+-1
+-2
+</samp></pre></div>
+                     <div class="tab-pane" id="tt178629-ws" role="tabpanel"><pre class="ws-text" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="4" data-type="input"></pre></div>
+                     <div class="tab-pane hex-tab" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="4" data-type="input" id="tt178629-hex" role="tabpanel"><pre class="hex-text" data-value="tt178629"></pre></div>
+                  </div>
+               </div>
+               <div style="width: 100%; font-weight: bold; margin-top: 15px; margin-bottom: 5px">Вывод<a href="/admin/run-report/download-test-output?runId=21542454&amp;testname=tests/01" style="margin-left: 15px;">Скачать</a></div>
+               <div>
+                  <ul class="nav nav-tabs" role="tablist">
+                     <li class="active" role="presentation"><a aria-controls="$tt178630-raw" class="nav-sm" data-toggle="tab" href="#tt178630-raw" role="tab"><i class="glyphicon glyphicon-eye-open"></i></a></li>
+                     <li role="presentation"><a aria-controls="$tt178630-ws" class="ws-tab-href nav-sm" data-toggle="tab" href="#tt178630-ws" role="tab">
+                           ¶
+                           </a></li>
+                     <li role="presentation"><a aria-controls="$tt178630-hex" class="hex-tab-href nav-sm" data-toggle="tab" href="#tt178630-hex" role="tab">
+                           0xFF
+                           </a></li>
+                  </ul>
+                  <div class="tab-content">
+                     <div class="tab-pane active" id="tt178630-raw" role="tabpanel"><pre><samp id="tt178630" style="white-space: pre;">2 -1.0 2.0
+</samp></pre></div>
+                     <div class="tab-pane" id="tt178630-ws" role="tabpanel"><pre class="ws-text" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="4" data-type="output"></pre></div>
+                     <div class="tab-pane hex-tab" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="4" data-type="output" id="tt178630-hex" role="tabpanel"><pre class="hex-text" data-value="tt178630"></pre></div>
+                  </div>
+               </div>
+               <div style="width: 100%; font-weight: bold; margin-top: 15px; margin-bottom: 5px">Ответ<a href="/admin/run-report/download?action=answer&amp;runId=21542454&amp;testname=tests/01" style="margin-left: 15px;">Скачать</a></div>
+               <div>
+                  <ul class="nav nav-tabs" role="tablist">
+                     <li class="active" role="presentation"><a aria-controls="$tt178631-raw" class="nav-sm" data-toggle="tab" href="#tt178631-raw" role="tab"><i class="glyphicon glyphicon-eye-open"></i></a></li>
+                     <li role="presentation"><a aria-controls="$tt178631-ws" class="ws-tab-href nav-sm" data-toggle="tab" href="#tt178631-ws" role="tab">
+                           ¶
+                           </a></li>
+                     <li role="presentation"><a aria-controls="$tt178631-hex" class="hex-tab-href nav-sm" data-toggle="tab" href="#tt178631-hex" role="tab">
+                           0xFF
+                           </a></li>
+                  </ul>
+                  <div class="tab-content">
+                     <div class="tab-pane active" id="tt178631-raw" role="tabpanel"><pre><samp id="tt178631" style="white-space: pre;">2 -1 2
+</samp></pre></div>
+                     <div class="tab-pane" id="tt178631-ws" role="tabpanel"><pre class="ws-text" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="4" data-type="answer"></pre></div>
+                     <div class="tab-pane hex-tab" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="4" data-type="answer" id="tt178631-hex" role="tabpanel"><pre class="hex-text" data-value="tt178631"></pre></div>
+                  </div>
+               </div>
+               <div style="width: 100%; font-weight: bold; margin-top: 15px; margin-bottom: 5px">Сообщение чекера</div>
+               <div>
+                  <ul class="nav nav-tabs" role="tablist">
+                     <li class="active" role="presentation"><a aria-controls="$tt178632-raw" class="nav-sm" data-toggle="tab" href="#tt178632-raw" role="tab"><i class="glyphicon glyphicon-eye-open"></i></a></li>
+                     <li role="presentation"><a aria-controls="$tt178632-ws" class="ws-tab-href nav-sm" data-toggle="tab" href="#tt178632-ws" role="tab">
+                           ¶
+                           </a></li>
+                     <li role="presentation"><a aria-controls="$tt178632-hex" class="hex-tab-href nav-sm" data-toggle="tab" href="#tt178632-hex" role="tab">
+                           0xFF
+                           </a></li>
+                  </ul>
+                  <div class="tab-content">
+                     <div class="tab-pane active" id="tt178632-raw" role="tabpanel"><pre><samp id="tt178632" style="white-space: pre;">OK
+</samp></pre></div>
+                     <div class="tab-pane" id="tt178632-ws" role="tabpanel"><pre class="ws-text" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="4" data-type="checker"></pre></div>
+                     <div class="tab-pane hex-tab" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="4" data-type="checker" id="tt178632-hex" role="tabpanel"><pre class="hex-text" data-value="tt178632"></pre></div>
+                  </div>
+               </div>
+               <h4><a class="js-link container-toggler" href="#" data-container="#log-of-tests01">Log of tests/01</a></h4>
+               <div class="hide" id="log-of-tests01">
+                  <table class="table table-bordered">
+                     <thead>
+                        <tr>
+                           <th>Уровень</th>
+                           <th>Вывод чекера</th>
+                        </tr>
+                     </thead>
+                     <tbod>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>Test number 0 in test set 1 has file name [tests/01]</td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>tests/01 -&gt; tests/01.a</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Running solution execution</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Reading input from '/var/lib/yandex/contest/slave/data-storage/directories/directory-1569146109240-45394/tests/01'</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Reading answer from '/var/lib/yandex/contest/slave/data-storage/directories/directory-1569146109240-45394/tests/01.a'</td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>create output file [/temp/executing/output.txt] with perms rw------- and chown [1007:1008] executor SimpleProblemExecutor</td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>create error file [/temp/executing/9c290c3b-7955-4185-876e-7ae7ec2d1a5c] with perms --------- and chown [1007:1008] executor
+                              SimpleProblemExecutor
+                           </td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Created solution process</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>
+                              Process.
+                              Executable:        /temp/executing/executingScript
+                              Working directory: /temp/executing
+                              Arguments:         [/temp/executing/executingScript, --execute, U.py, 3bb3952b-031b-495c-8e56-8a46bce3d2d8]
+                              Environment:       {PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin, LC_ALL=en_US.UTF-8, LANG=en_US.UTF-8,
+                              HOME=/}
+                              Owner:             1007:1008
+                              stream 0           File: "/temp/executing/input.txt" READ_ONLY
+                              stream 1           File: "/temp/executing/output.txt" WRITE_ONLY
+                              stream 2           File: "/temp/executing/9c290c3b-7955-4185-876e-7ae7ec2d1a5c" WRITE_ONLY
+                              
+                           </td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>
+                              Process limits.
+                              Time limit:           2000
+                              Memory limit:         67108864
+                              Output limit:         67108864
+                              Number of processes:  1
+                           </td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>Process group executed: OK</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>
+                              Process executed '/temp/executing/executingScript'
+                              Status      OK
+                              ExitStatus  0
+                              Memory      4116480 B
+                              User time   40 ms
+                              Time        47685344 ns
+                              Term sig    null
+                              
+                           </td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Copying files for debug</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Executed without errors</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Running checker</td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>OK ( 47 ms / 519 ms )</td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>verdict OK test 0 in test set 1</td>
+                        </tr>
+                     </tbod>
+                  </table>
+               </div>
+               <hr><a name="test_5"></a><h5>Тест <i class="icon-white"></i>tests/02<small><i class="icon-white"></i>Набор тестов<i class="icon-white"></i>
+                     '
+                     <a href="/admin/ng#/problem/175943%2F2016_09_17%2FViDOJMR847#test-set-2-panel">All tests</a>
+                     '
+                     </small></h5>
+               <div style="width: 100%; font-weight: bold; margin-top: 15px; margin-bottom: 5px">Ввод<a href="/admin/run-report/download?action=input&amp;runId=21542454&amp;testname=tests/02" style="margin-left: 15px;">Скачать</a></div>
+               <div>
+                  <ul class="nav nav-tabs" role="tablist">
+                     <li class="active" role="presentation"><a aria-controls="$tt178633-raw" class="nav-sm" data-toggle="tab" href="#tt178633-raw" role="tab"><i class="glyphicon glyphicon-eye-open"></i></a></li>
+                     <li role="presentation"><a aria-controls="$tt178633-ws" class="ws-tab-href nav-sm" data-toggle="tab" href="#tt178633-ws" role="tab">
+                           ¶
+                           </a></li>
+                     <li role="presentation"><a aria-controls="$tt178633-hex" class="hex-tab-href nav-sm" data-toggle="tab" href="#tt178633-hex" role="tab">
+                           0xFF
+                           </a></li>
+                  </ul>
+                  <div class="tab-content">
+                     <div class="tab-pane active" id="tt178633-raw" role="tabpanel"><pre><samp id="tt178633" style="white-space: pre;">1
+2
+1
+</samp></pre></div>
+                     <div class="tab-pane" id="tt178633-ws" role="tabpanel"><pre class="ws-text" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="5" data-type="input"></pre></div>
+                     <div class="tab-pane hex-tab" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="5" data-type="input" id="tt178633-hex" role="tabpanel"><pre class="hex-text" data-value="tt178633"></pre></div>
+                  </div>
+               </div>
+               <div style="width: 100%; font-weight: bold; margin-top: 15px; margin-bottom: 5px">Вывод<a href="/admin/run-report/download-test-output?runId=21542454&amp;testname=tests/02" style="margin-left: 15px;">Скачать</a></div>
+               <div>
+                  <ul class="nav nav-tabs" role="tablist">
+                     <li class="active" role="presentation"><a aria-controls="$tt178634-raw" class="nav-sm" data-toggle="tab" href="#tt178634-raw" role="tab"><i class="glyphicon glyphicon-eye-open"></i></a></li>
+                     <li role="presentation"><a aria-controls="$tt178634-ws" class="ws-tab-href nav-sm" data-toggle="tab" href="#tt178634-ws" role="tab">
+                           ¶
+                           </a></li>
+                     <li role="presentation"><a aria-controls="$tt178634-hex" class="hex-tab-href nav-sm" data-toggle="tab" href="#tt178634-hex" role="tab">
+                           0xFF
+                           </a></li>
+                  </ul>
+                  <div class="tab-content">
+                     <div class="tab-pane active" id="tt178634-raw" role="tabpanel"><pre><samp id="tt178634" style="white-space: pre;">1 -1.0
+</samp></pre></div>
+                     <div class="tab-pane" id="tt178634-ws" role="tabpanel"><pre class="ws-text" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="5" data-type="output"></pre></div>
+                     <div class="tab-pane hex-tab" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="5" data-type="output" id="tt178634-hex" role="tabpanel"><pre class="hex-text" data-value="tt178634"></pre></div>
+                  </div>
+               </div>
+               <div style="width: 100%; font-weight: bold; margin-top: 15px; margin-bottom: 5px">Ответ<a href="/admin/run-report/download?action=answer&amp;runId=21542454&amp;testname=tests/02" style="margin-left: 15px;">Скачать</a></div>
+               <div>
+                  <ul class="nav nav-tabs" role="tablist">
+                     <li class="active" role="presentation"><a aria-controls="$tt178635-raw" class="nav-sm" data-toggle="tab" href="#tt178635-raw" role="tab"><i class="glyphicon glyphicon-eye-open"></i></a></li>
+                     <li role="presentation"><a aria-controls="$tt178635-ws" class="ws-tab-href nav-sm" data-toggle="tab" href="#tt178635-ws" role="tab">
+                           ¶
+                           </a></li>
+                     <li role="presentation"><a aria-controls="$tt178635-hex" class="hex-tab-href nav-sm" data-toggle="tab" href="#tt178635-hex" role="tab">
+                           0xFF
+                           </a></li>
+                  </ul>
+                  <div class="tab-content">
+                     <div class="tab-pane active" id="tt178635-raw" role="tabpanel"><pre><samp id="tt178635" style="white-space: pre;">1 -1
+</samp></pre></div>
+                     <div class="tab-pane" id="tt178635-ws" role="tabpanel"><pre class="ws-text" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="5" data-type="answer"></pre></div>
+                     <div class="tab-pane hex-tab" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="5" data-type="answer" id="tt178635-hex" role="tabpanel"><pre class="hex-text" data-value="tt178635"></pre></div>
+                  </div>
+               </div>
+               <div style="width: 100%; font-weight: bold; margin-top: 15px; margin-bottom: 5px">Сообщение чекера</div>
+               <div>
+                  <ul class="nav nav-tabs" role="tablist">
+                     <li class="active" role="presentation"><a aria-controls="$tt178636-raw" class="nav-sm" data-toggle="tab" href="#tt178636-raw" role="tab"><i class="glyphicon glyphicon-eye-open"></i></a></li>
+                     <li role="presentation"><a aria-controls="$tt178636-ws" class="ws-tab-href nav-sm" data-toggle="tab" href="#tt178636-ws" role="tab">
+                           ¶
+                           </a></li>
+                     <li role="presentation"><a aria-controls="$tt178636-hex" class="hex-tab-href nav-sm" data-toggle="tab" href="#tt178636-hex" role="tab">
+                           0xFF
+                           </a></li>
+                  </ul>
+                  <div class="tab-content">
+                     <div class="tab-pane active" id="tt178636-raw" role="tabpanel"><pre><samp id="tt178636" style="white-space: pre;">OK
+</samp></pre></div>
+                     <div class="tab-pane" id="tt178636-ws" role="tabpanel"><pre class="ws-text" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="5" data-type="checker"></pre></div>
+                     <div class="tab-pane hex-tab" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="5" data-type="checker" id="tt178636-hex" role="tabpanel"><pre class="hex-text" data-value="tt178636"></pre></div>
+                  </div>
+               </div>
+               <h4><a class="js-link container-toggler" href="#" data-container="#log-of-tests02">Log of tests/02</a></h4>
+               <div class="hide" id="log-of-tests02">
+                  <table class="table table-bordered">
+                     <thead>
+                        <tr>
+                           <th>Уровень</th>
+                           <th>Вывод чекера</th>
+                        </tr>
+                     </thead>
+                     <tbod>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>Test number 1 in test set 1 has file name [tests/02]</td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>tests/02 -&gt; tests/02.a</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Running solution execution</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Reading input from '/var/lib/yandex/contest/slave/data-storage/directories/directory-1569146109240-45394/tests/02'</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Reading answer from '/var/lib/yandex/contest/slave/data-storage/directories/directory-1569146109240-45394/tests/02.a'</td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>create output file [/temp/executing/output.txt] with perms rw------- and chown [1007:1008] executor SimpleProblemExecutor</td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>create error file [/temp/executing/9c290c3b-7955-4185-876e-7ae7ec2d1a5c] with perms --------- and chown [1007:1008] executor
+                              SimpleProblemExecutor
+                           </td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Created solution process</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>
+                              Process.
+                              Executable:        /temp/executing/executingScript
+                              Working directory: /temp/executing
+                              Arguments:         [/temp/executing/executingScript, --execute, U.py, 3bb3952b-031b-495c-8e56-8a46bce3d2d8]
+                              Environment:       {PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin, LC_ALL=en_US.UTF-8, LANG=en_US.UTF-8,
+                              HOME=/}
+                              Owner:             1007:1008
+                              stream 0           File: "/temp/executing/input.txt" READ_ONLY
+                              stream 1           File: "/temp/executing/output.txt" WRITE_ONLY
+                              stream 2           File: "/temp/executing/9c290c3b-7955-4185-876e-7ae7ec2d1a5c" WRITE_ONLY
+                              
+                           </td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>
+                              Process limits.
+                              Time limit:           2000
+                              Memory limit:         67108864
+                              Output limit:         67108864
+                              Number of processes:  1
+                           </td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>Process group executed: OK</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>
+                              Process executed '/temp/executing/executingScript'
+                              Status      OK
+                              ExitStatus  0
+                              Memory      4055040 B
+                              User time   30 ms
+                              Time        47291409 ns
+                              Term sig    null
+                              
+                           </td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Copying files for debug</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Executed without errors</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Running checker</td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>OK ( 47 ms / 532 ms )</td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>verdict OK test 1 in test set 1</td>
+                        </tr>
+                     </tbod>
+                  </table>
+               </div>
+               <hr><a name="test_6"></a><h5>Тест <i class="icon-white"></i>tests/03<small><i class="icon-white"></i>Набор тестов<i class="icon-white"></i>
+                     '
+                     <a href="/admin/ng#/problem/175943%2F2016_09_17%2FViDOJMR847#test-set-2-panel">All tests</a>
+                     '
+                     </small></h5>
+               <div style="width: 100%; font-weight: bold; margin-top: 15px; margin-bottom: 5px">Ввод<a href="/admin/run-report/download?action=input&amp;runId=21542454&amp;testname=tests/03" style="margin-left: 15px;">Скачать</a></div>
+               <div>
+                  <ul class="nav nav-tabs" role="tablist">
+                     <li class="active" role="presentation"><a aria-controls="$tt178637-raw" class="nav-sm" data-toggle="tab" href="#tt178637-raw" role="tab"><i class="glyphicon glyphicon-eye-open"></i></a></li>
+                     <li role="presentation"><a aria-controls="$tt178637-ws" class="ws-tab-href nav-sm" data-toggle="tab" href="#tt178637-ws" role="tab">
+                           ¶
+                           </a></li>
+                     <li role="presentation"><a aria-controls="$tt178637-hex" class="hex-tab-href nav-sm" data-toggle="tab" href="#tt178637-hex" role="tab">
+                           0xFF
+                           </a></li>
+                  </ul>
+                  <div class="tab-content">
+                     <div class="tab-pane active" id="tt178637-raw" role="tabpanel"><pre><samp id="tt178637" style="white-space: pre;">1
+-7.5
+3
+</samp></pre></div>
+                     <div class="tab-pane" id="tt178637-ws" role="tabpanel"><pre class="ws-text" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="6" data-type="input"></pre></div>
+                     <div class="tab-pane hex-tab" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="6" data-type="input" id="tt178637-hex" role="tabpanel"><pre class="hex-text" data-value="tt178637"></pre></div>
+                  </div>
+               </div>
+               <div style="width: 100%; font-weight: bold; margin-top: 15px; margin-bottom: 5px">Вывод<a href="/admin/run-report/download-test-output?runId=21542454&amp;testname=tests/03" style="margin-left: 15px;">Скачать</a></div>
+               <div>
+                  <ul class="nav nav-tabs" role="tablist">
+                     <li class="active" role="presentation"><a aria-controls="$tt178638-raw" class="nav-sm" data-toggle="tab" href="#tt178638-raw" role="tab"><i class="glyphicon glyphicon-eye-open"></i></a></li>
+                     <li role="presentation"><a aria-controls="$tt178638-ws" class="ws-tab-href nav-sm" data-toggle="tab" href="#tt178638-ws" role="tab">
+                           ¶
+                           </a></li>
+                     <li role="presentation"><a aria-controls="$tt178638-hex" class="hex-tab-href nav-sm" data-toggle="tab" href="#tt178638-hex" role="tab">
+                           0xFF
+                           </a></li>
+                  </ul>
+                  <div class="tab-content">
+                     <div class="tab-pane active" id="tt178638-raw" role="tabpanel"><pre><samp id="tt178638" style="white-space: pre;">2 0.4239663260874824 7.076033673912518
+</samp></pre></div>
+                     <div class="tab-pane" id="tt178638-ws" role="tabpanel"><pre class="ws-text" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="6" data-type="output"></pre></div>
+                     <div class="tab-pane hex-tab" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="6" data-type="output" id="tt178638-hex" role="tabpanel"><pre class="hex-text" data-value="tt178638"></pre></div>
+                  </div>
+               </div>
+               <div style="width: 100%; font-weight: bold; margin-top: 15px; margin-bottom: 5px">Ответ<a href="/admin/run-report/download?action=answer&amp;runId=21542454&amp;testname=tests/03" style="margin-left: 15px;">Скачать</a></div>
+               <div>
+                  <ul class="nav nav-tabs" role="tablist">
+                     <li class="active" role="presentation"><a aria-controls="$tt178639-raw" class="nav-sm" data-toggle="tab" href="#tt178639-raw" role="tab"><i class="glyphicon glyphicon-eye-open"></i></a></li>
+                     <li role="presentation"><a aria-controls="$tt178639-ws" class="ws-tab-href nav-sm" data-toggle="tab" href="#tt178639-ws" role="tab">
+                           ¶
+                           </a></li>
+                     <li role="presentation"><a aria-controls="$tt178639-hex" class="hex-tab-href nav-sm" data-toggle="tab" href="#tt178639-hex" role="tab">
+                           0xFF
+                           </a></li>
+                  </ul>
+                  <div class="tab-content">
+                     <div class="tab-pane active" id="tt178639-raw" role="tabpanel"><pre><samp id="tt178639" style="white-space: pre;">2 0.423966 7.07603
+</samp></pre></div>
+                     <div class="tab-pane" id="tt178639-ws" role="tabpanel"><pre class="ws-text" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="6" data-type="answer"></pre></div>
+                     <div class="tab-pane hex-tab" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="6" data-type="answer" id="tt178639-hex" role="tabpanel"><pre class="hex-text" data-value="tt178639"></pre></div>
+                  </div>
+               </div>
+               <div style="width: 100%; font-weight: bold; margin-top: 15px; margin-bottom: 5px">Сообщение чекера</div>
+               <div>
+                  <ul class="nav nav-tabs" role="tablist">
+                     <li class="active" role="presentation"><a aria-controls="$tt178640-raw" class="nav-sm" data-toggle="tab" href="#tt178640-raw" role="tab"><i class="glyphicon glyphicon-eye-open"></i></a></li>
+                     <li role="presentation"><a aria-controls="$tt178640-ws" class="ws-tab-href nav-sm" data-toggle="tab" href="#tt178640-ws" role="tab">
+                           ¶
+                           </a></li>
+                     <li role="presentation"><a aria-controls="$tt178640-hex" class="hex-tab-href nav-sm" data-toggle="tab" href="#tt178640-hex" role="tab">
+                           0xFF
+                           </a></li>
+                  </ul>
+                  <div class="tab-content">
+                     <div class="tab-pane active" id="tt178640-raw" role="tabpanel"><pre><samp id="tt178640" style="white-space: pre;">OK
+</samp></pre></div>
+                     <div class="tab-pane" id="tt178640-ws" role="tabpanel"><pre class="ws-text" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="6" data-type="checker"></pre></div>
+                     <div class="tab-pane hex-tab" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="6" data-type="checker" id="tt178640-hex" role="tabpanel"><pre class="hex-text" data-value="tt178640"></pre></div>
+                  </div>
+               </div>
+               <h4><a class="js-link container-toggler" href="#" data-container="#log-of-tests03">Log of tests/03</a></h4>
+               <div class="hide" id="log-of-tests03">
+                  <table class="table table-bordered">
+                     <thead>
+                        <tr>
+                           <th>Уровень</th>
+                           <th>Вывод чекера</th>
+                        </tr>
+                     </thead>
+                     <tbod>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>Test number 2 in test set 1 has file name [tests/03]</td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>tests/03 -&gt; tests/03.a</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Running solution execution</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Reading input from '/var/lib/yandex/contest/slave/data-storage/directories/directory-1569146109240-45394/tests/03'</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Reading answer from '/var/lib/yandex/contest/slave/data-storage/directories/directory-1569146109240-45394/tests/03.a'</td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>create output file [/temp/executing/output.txt] with perms rw------- and chown [1007:1008] executor SimpleProblemExecutor</td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>create error file [/temp/executing/9c290c3b-7955-4185-876e-7ae7ec2d1a5c] with perms --------- and chown [1007:1008] executor
+                              SimpleProblemExecutor
+                           </td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Created solution process</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>
+                              Process.
+                              Executable:        /temp/executing/executingScript
+                              Working directory: /temp/executing
+                              Arguments:         [/temp/executing/executingScript, --execute, U.py, 3bb3952b-031b-495c-8e56-8a46bce3d2d8]
+                              Environment:       {PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin, LC_ALL=en_US.UTF-8, LANG=en_US.UTF-8,
+                              HOME=/}
+                              Owner:             1007:1008
+                              stream 0           File: "/temp/executing/input.txt" READ_ONLY
+                              stream 1           File: "/temp/executing/output.txt" WRITE_ONLY
+                              stream 2           File: "/temp/executing/9c290c3b-7955-4185-876e-7ae7ec2d1a5c" WRITE_ONLY
+                              
+                           </td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>
+                              Process limits.
+                              Time limit:           2000
+                              Memory limit:         67108864
+                              Output limit:         67108864
+                              Number of processes:  1
+                           </td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>Process group executed: OK</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>
+                              Process executed '/temp/executing/executingScript'
+                              Status      OK
+                              ExitStatus  0
+                              Memory      4075520 B
+                              User time   40 ms
+                              Time        47753349 ns
+                              Term sig    null
+                              
+                           </td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Copying files for debug</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Executed without errors</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Running checker</td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>OK ( 47 ms / 515 ms )</td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>verdict OK test 2 in test set 1</td>
+                        </tr>
+                     </tbod>
+                  </table>
+               </div>
+               <hr><a name="test_7"></a><h5>Тест <i class="icon-white"></i>tests/04<small><i class="icon-white"></i>Набор тестов<i class="icon-white"></i>
+                     '
+                     <a href="/admin/ng#/problem/175943%2F2016_09_17%2FViDOJMR847#test-set-2-panel">All tests</a>
+                     '
+                     </small></h5>
+               <div style="width: 100%; font-weight: bold; margin-top: 15px; margin-bottom: 5px">Ввод<a href="/admin/run-report/download?action=input&amp;runId=21542454&amp;testname=tests/04" style="margin-left: 15px;">Скачать</a></div>
+               <div>
+                  <ul class="nav nav-tabs" role="tablist">
+                     <li class="active" role="presentation"><a aria-controls="$tt178641-raw" class="nav-sm" data-toggle="tab" href="#tt178641-raw" role="tab"><i class="glyphicon glyphicon-eye-open"></i></a></li>
+                     <li role="presentation"><a aria-controls="$tt178641-ws" class="ws-tab-href nav-sm" data-toggle="tab" href="#tt178641-ws" role="tab">
+                           ¶
+                           </a></li>
+                     <li role="presentation"><a aria-controls="$tt178641-hex" class="hex-tab-href nav-sm" data-toggle="tab" href="#tt178641-hex" role="tab">
+                           0xFF
+                           </a></li>
+                  </ul>
+                  <div class="tab-content">
+                     <div class="tab-pane active" id="tt178641-raw" role="tabpanel"><pre><samp id="tt178641" style="white-space: pre;">-4
+12
+-9
+</samp></pre></div>
+                     <div class="tab-pane" id="tt178641-ws" role="tabpanel"><pre class="ws-text" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="7" data-type="input"></pre></div>
+                     <div class="tab-pane hex-tab" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="7" data-type="input" id="tt178641-hex" role="tabpanel"><pre class="hex-text" data-value="tt178641"></pre></div>
+                  </div>
+               </div>
+               <div style="width: 100%; font-weight: bold; margin-top: 15px; margin-bottom: 5px">Вывод<a href="/admin/run-report/download-test-output?runId=21542454&amp;testname=tests/04" style="margin-left: 15px;">Скачать</a></div>
+               <div>
+                  <ul class="nav nav-tabs" role="tablist">
+                     <li class="active" role="presentation"><a aria-controls="$tt178642-raw" class="nav-sm" data-toggle="tab" href="#tt178642-raw" role="tab"><i class="glyphicon glyphicon-eye-open"></i></a></li>
+                     <li role="presentation"><a aria-controls="$tt178642-ws" class="ws-tab-href nav-sm" data-toggle="tab" href="#tt178642-ws" role="tab">
+                           ¶
+                           </a></li>
+                     <li role="presentation"><a aria-controls="$tt178642-hex" class="hex-tab-href nav-sm" data-toggle="tab" href="#tt178642-hex" role="tab">
+                           0xFF
+                           </a></li>
+                  </ul>
+                  <div class="tab-content">
+                     <div class="tab-pane active" id="tt178642-raw" role="tabpanel"><pre><samp id="tt178642" style="white-space: pre;">1 1.5
+</samp></pre></div>
+                     <div class="tab-pane" id="tt178642-ws" role="tabpanel"><pre class="ws-text" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="7" data-type="output"></pre></div>
+                     <div class="tab-pane hex-tab" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="7" data-type="output" id="tt178642-hex" role="tabpanel"><pre class="hex-text" data-value="tt178642"></pre></div>
+                  </div>
+               </div>
+               <div style="width: 100%; font-weight: bold; margin-top: 15px; margin-bottom: 5px">Ответ<a href="/admin/run-report/download?action=answer&amp;runId=21542454&amp;testname=tests/04" style="margin-left: 15px;">Скачать</a></div>
+               <div>
+                  <ul class="nav nav-tabs" role="tablist">
+                     <li class="active" role="presentation"><a aria-controls="$tt178643-raw" class="nav-sm" data-toggle="tab" href="#tt178643-raw" role="tab"><i class="glyphicon glyphicon-eye-open"></i></a></li>
+                     <li role="presentation"><a aria-controls="$tt178643-ws" class="ws-tab-href nav-sm" data-toggle="tab" href="#tt178643-ws" role="tab">
+                           ¶
+                           </a></li>
+                     <li role="presentation"><a aria-controls="$tt178643-hex" class="hex-tab-href nav-sm" data-toggle="tab" href="#tt178643-hex" role="tab">
+                           0xFF
+                           </a></li>
+                  </ul>
+                  <div class="tab-content">
+                     <div class="tab-pane active" id="tt178643-raw" role="tabpanel"><pre><samp id="tt178643" style="white-space: pre;">1 1.5
+</samp></pre></div>
+                     <div class="tab-pane" id="tt178643-ws" role="tabpanel"><pre class="ws-text" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="7" data-type="answer"></pre></div>
+                     <div class="tab-pane hex-tab" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="7" data-type="answer" id="tt178643-hex" role="tabpanel"><pre class="hex-text" data-value="tt178643"></pre></div>
+                  </div>
+               </div>
+               <div style="width: 100%; font-weight: bold; margin-top: 15px; margin-bottom: 5px">Сообщение чекера</div>
+               <div>
+                  <ul class="nav nav-tabs" role="tablist">
+                     <li class="active" role="presentation"><a aria-controls="$tt178644-raw" class="nav-sm" data-toggle="tab" href="#tt178644-raw" role="tab"><i class="glyphicon glyphicon-eye-open"></i></a></li>
+                     <li role="presentation"><a aria-controls="$tt178644-ws" class="ws-tab-href nav-sm" data-toggle="tab" href="#tt178644-ws" role="tab">
+                           ¶
+                           </a></li>
+                     <li role="presentation"><a aria-controls="$tt178644-hex" class="hex-tab-href nav-sm" data-toggle="tab" href="#tt178644-hex" role="tab">
+                           0xFF
+                           </a></li>
+                  </ul>
+                  <div class="tab-content">
+                     <div class="tab-pane active" id="tt178644-raw" role="tabpanel"><pre><samp id="tt178644" style="white-space: pre;">OK
+</samp></pre></div>
+                     <div class="tab-pane" id="tt178644-ws" role="tabpanel"><pre class="ws-text" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="7" data-type="checker"></pre></div>
+                     <div class="tab-pane hex-tab" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="7" data-type="checker" id="tt178644-hex" role="tabpanel"><pre class="hex-text" data-value="tt178644"></pre></div>
+                  </div>
+               </div>
+               <h4><a class="js-link container-toggler" href="#" data-container="#log-of-tests04">Log of tests/04</a></h4>
+               <div class="hide" id="log-of-tests04">
+                  <table class="table table-bordered">
+                     <thead>
+                        <tr>
+                           <th>Уровень</th>
+                           <th>Вывод чекера</th>
+                        </tr>
+                     </thead>
+                     <tbod>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>Test number 3 in test set 1 has file name [tests/04]</td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>tests/04 -&gt; tests/04.a</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Running solution execution</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Reading input from '/var/lib/yandex/contest/slave/data-storage/directories/directory-1569146109240-45394/tests/04'</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Reading answer from '/var/lib/yandex/contest/slave/data-storage/directories/directory-1569146109240-45394/tests/04.a'</td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>create output file [/temp/executing/output.txt] with perms rw------- and chown [1007:1008] executor SimpleProblemExecutor</td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>create error file [/temp/executing/9c290c3b-7955-4185-876e-7ae7ec2d1a5c] with perms --------- and chown [1007:1008] executor
+                              SimpleProblemExecutor
+                           </td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Created solution process</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>
+                              Process.
+                              Executable:        /temp/executing/executingScript
+                              Working directory: /temp/executing
+                              Arguments:         [/temp/executing/executingScript, --execute, U.py, 3bb3952b-031b-495c-8e56-8a46bce3d2d8]
+                              Environment:       {PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin, LC_ALL=en_US.UTF-8, LANG=en_US.UTF-8,
+                              HOME=/}
+                              Owner:             1007:1008
+                              stream 0           File: "/temp/executing/input.txt" READ_ONLY
+                              stream 1           File: "/temp/executing/output.txt" WRITE_ONLY
+                              stream 2           File: "/temp/executing/9c290c3b-7955-4185-876e-7ae7ec2d1a5c" WRITE_ONLY
+                              
+                           </td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>
+                              Process limits.
+                              Time limit:           2000
+                              Memory limit:         67108864
+                              Output limit:         67108864
+                              Number of processes:  1
+                           </td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>Process group executed: OK</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>
+                              Process executed '/temp/executing/executingScript'
+                              Status      OK
+                              ExitStatus  0
+                              Memory      4079616 B
+                              User time   40 ms
+                              Time        47963817 ns
+                              Term sig    null
+                              
+                           </td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Copying files for debug</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Executed without errors</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Running checker</td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>OK ( 47 ms / 535 ms )</td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>verdict OK test 3 in test set 1</td>
+                        </tr>
+                     </tbod>
+                  </table>
+               </div>
+               <hr><a name="test_8"></a><h5>Тест <i class="icon-white"></i>tests/05<small><i class="icon-white"></i>Набор тестов<i class="icon-white"></i>
+                     '
+                     <a href="/admin/ng#/problem/175943%2F2016_09_17%2FViDOJMR847#test-set-2-panel">All tests</a>
+                     '
+                     </small></h5>
+               <div style="width: 100%; font-weight: bold; margin-top: 15px; margin-bottom: 5px">Ввод<a href="/admin/run-report/download?action=input&amp;runId=21542454&amp;testname=tests/05" style="margin-left: 15px;">Скачать</a></div>
+               <div>
+                  <ul class="nav nav-tabs" role="tablist">
+                     <li class="active" role="presentation"><a aria-controls="$tt178645-raw" class="nav-sm" data-toggle="tab" href="#tt178645-raw" role="tab"><i class="glyphicon glyphicon-eye-open"></i></a></li>
+                     <li role="presentation"><a aria-controls="$tt178645-ws" class="ws-tab-href nav-sm" data-toggle="tab" href="#tt178645-ws" role="tab">
+                           ¶
+                           </a></li>
+                     <li role="presentation"><a aria-controls="$tt178645-hex" class="hex-tab-href nav-sm" data-toggle="tab" href="#tt178645-hex" role="tab">
+                           0xFF
+                           </a></li>
+                  </ul>
+                  <div class="tab-content">
+                     <div class="tab-pane active" id="tt178645-raw" role="tabpanel"><pre><samp id="tt178645" style="white-space: pre;">0.1
+-1.5
+10
+</samp></pre></div>
+                     <div class="tab-pane" id="tt178645-ws" role="tabpanel"><pre class="ws-text" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="8" data-type="input"></pre></div>
+                     <div class="tab-pane hex-tab" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="8" data-type="input" id="tt178645-hex" role="tabpanel"><pre class="hex-text" data-value="tt178645"></pre></div>
+                  </div>
+               </div>
+               <div style="width: 100%; font-weight: bold; margin-top: 15px; margin-bottom: 5px">Вывод<a href="/admin/run-report/download-test-output?runId=21542454&amp;testname=tests/05" style="margin-left: 15px;">Скачать</a></div>
+               <div>
+                  &nbsp;
+                  
+               </div>
+               <div style="width: 100%; font-weight: bold; margin-top: 15px; margin-bottom: 5px">Ответ<a href="/admin/run-report/download?action=answer&amp;runId=21542454&amp;testname=tests/05" style="margin-left: 15px;">Скачать</a></div>
+               <div>
+                  <ul class="nav nav-tabs" role="tablist">
+                     <li class="active" role="presentation"><a aria-controls="$tt178646-raw" class="nav-sm" data-toggle="tab" href="#tt178646-raw" role="tab"><i class="glyphicon glyphicon-eye-open"></i></a></li>
+                     <li role="presentation"><a aria-controls="$tt178646-ws" class="ws-tab-href nav-sm" data-toggle="tab" href="#tt178646-ws" role="tab">
+                           ¶
+                           </a></li>
+                     <li role="presentation"><a aria-controls="$tt178646-hex" class="hex-tab-href nav-sm" data-toggle="tab" href="#tt178646-hex" role="tab">
+                           0xFF
+                           </a></li>
+                  </ul>
+                  <div class="tab-content">
+                     <div class="tab-pane active" id="tt178646-raw" role="tabpanel"><pre><samp id="tt178646" style="white-space: pre;">0
+</samp></pre></div>
+                     <div class="tab-pane" id="tt178646-ws" role="tabpanel"><pre class="ws-text" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="8" data-type="answer"></pre></div>
+                     <div class="tab-pane hex-tab" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="8" data-type="answer" id="tt178646-hex" role="tabpanel"><pre class="hex-text" data-value="tt178646"></pre></div>
+                  </div>
+               </div>
+               <div style="width: 100%; font-weight: bold; margin-top: 15px; margin-bottom: 5px">Сообщение чекера</div>
+               <div>
+                  <ul class="nav nav-tabs" role="tablist">
+                     <li class="active" role="presentation"><a aria-controls="$tt178647-raw" class="nav-sm" data-toggle="tab" href="#tt178647-raw" role="tab"><i class="glyphicon glyphicon-eye-open"></i></a></li>
+                     <li role="presentation"><a aria-controls="$tt178647-ws" class="ws-tab-href nav-sm" data-toggle="tab" href="#tt178647-ws" role="tab">
+                           ¶
+                           </a></li>
+                     <li role="presentation"><a aria-controls="$tt178647-hex" class="hex-tab-href nav-sm" data-toggle="tab" href="#tt178647-hex" role="tab">
+                           0xFF
+                           </a></li>
+                  </ul>
+                  <div class="tab-content">
+                     <div class="tab-pane active" id="tt178647-raw" role="tabpanel"><pre><samp id="tt178647" style="white-space: pre;">Too few numbers in the out output
+</samp></pre></div>
+                     <div class="tab-pane" id="tt178647-ws" role="tabpanel"><pre class="ws-text" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="8" data-type="checker"></pre></div>
+                     <div class="tab-pane hex-tab" data-is-standalone="false" data-rejudge-id="" data-run-id="21542454" data-test-index="8" data-type="checker" id="tt178647-hex" role="tabpanel"><pre class="hex-text" data-value="tt178647"></pre></div>
+                  </div>
+               </div>
+               <h4><a class="js-link container-toggler" href="#" data-container="#log-of-tests05">Log of tests/05</a></h4>
+               <div class="hide" id="log-of-tests05">
+                  <table class="table table-bordered">
+                     <thead>
+                        <tr>
+                           <th>Уровень</th>
+                           <th>Вывод чекера</th>
+                        </tr>
+                     </thead>
+                     <tbod>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>Test number 4 in test set 1 has file name [tests/05]</td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>tests/05 -&gt; tests/05.a</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Running solution execution</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Reading input from '/var/lib/yandex/contest/slave/data-storage/directories/directory-1569146109240-45394/tests/05'</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Reading answer from '/var/lib/yandex/contest/slave/data-storage/directories/directory-1569146109240-45394/tests/05.a'</td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>create output file [/temp/executing/output.txt] with perms rw------- and chown [1007:1008] executor SimpleProblemExecutor</td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>create error file [/temp/executing/9c290c3b-7955-4185-876e-7ae7ec2d1a5c] with perms --------- and chown [1007:1008] executor
+                              SimpleProblemExecutor
+                           </td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Created solution process</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>
+                              Process.
+                              Executable:        /temp/executing/executingScript
+                              Working directory: /temp/executing
+                              Arguments:         [/temp/executing/executingScript, --execute, U.py, 3bb3952b-031b-495c-8e56-8a46bce3d2d8]
+                              Environment:       {PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin, LC_ALL=en_US.UTF-8, LANG=en_US.UTF-8,
+                              HOME=/}
+                              Owner:             1007:1008
+                              stream 0           File: "/temp/executing/input.txt" READ_ONLY
+                              stream 1           File: "/temp/executing/output.txt" WRITE_ONLY
+                              stream 2           File: "/temp/executing/9c290c3b-7955-4185-876e-7ae7ec2d1a5c" WRITE_ONLY
+                              
+                           </td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>
+                              Process limits.
+                              Time limit:           2000
+                              Memory limit:         67108864
+                              Output limit:         67108864
+                              Number of processes:  1
+                           </td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>Process group executed: OK</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>
+                              Process executed '/temp/executing/executingScript'
+                              Status      OK
+                              ExitStatus  0
+                              Memory      4091904 B
+                              User time   40 ms
+                              Time        44433329 ns
+                              Term sig    null
+                              
+                           </td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Copying files for debug</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Executed without errors</td>
+                        </tr>
+                        <tr class="debug">
+                           <td>debug</td>
+                           <td>Running checker</td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>WrongAnswer ( 44 ms / 515 ms )</td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>Stopping on first fail</td>
+                        </tr>
+                        <tr class="info">
+                           <td>info</td>
+                           <td>verdict WrongAnswer test 4 in test set 1</td>
+                        </tr>
+                     </tbod>
+                  </table>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div aria-hidden="true" aria-labelledby="modalLabel" class="modal hide fade" id="btn-confirmation-dialog" role="dialog" tabindex="-1">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header"><button aria-hidden="true" class="close" data-dismiss="modal" type="button">×</button><h3 id="modalLabel">Подтвердите действие</h3>
+               </div>
+               <div class="modal-body">
+                  <p>Подтвердите действие</p>
+               </div>
+               <div class="modal-footer"><button aria-hidden="true" class="btn" data-dismiss="modal">Отменить</button><a class="btn btn-primary update-confirmation-btn" href="">Подтвердить</a></div>
+            </div>
+         </div>
+      </div>
+      <div aria-hidden="true" aria-labelledby="modalLabel" class="async-op-submitted-template modal hide fade" role="dialog" tabindex="-1">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header"><button aria-hidden="true" class="close" data-dismiss="modal" type="button">×</button><h3 id="modalLabel">Async operation submitted</h3>
+               </div>
+               <div class="modal-body">
+                  <p>Async operation successfully created: <a class="opLink" href="#"><span class="opId"></span></a></p>
+               </div>
+               <div class="modal-footer"><button aria-hidden="true" class="btn" data-dismiss="modal">Ok</button></div>
+            </div>
+         </div>
+      </div><a class="scroll-to-top-btn text-center btn-info" href="#" title="To top"><i class="glyphicon glyphicon-chevron-up"></i></a><div class="modal hide" id="error-popup">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header">
+                  Error <span></span><a class="close" data-dismiss="modal">×</a></div>
+               <div class="modal-body"></div>
+               <div class="modal-footer">
+                  Try to refresh page.
+                  
+               </div>
+            </div>
+         </div>
+      </div><script src="//yastatic.net/jquery/2.1.0/jquery.min.js" type="text/javascript"></script><script src="//yastatic.net/bootstrap/3.2.0/js/bootstrap.min.js" type="text/javascript"></script><script src="/admin/r/jasny-bootstrap/js/bootstrap.min.js" type="text/javascript"></script><script src="/admin/r/bootstrap-editable/js/bootstrap-editable.js" type="text/javascript"></script><script src="/admin/r/bootstrap-editable/js/moment.min.js" type="text/javascript"></script><script src="/admin/r/bootstrap-editable/js/combodate.js" type="text/javascript"></script><script src="/admin/r/bootstrap-editable/js/lang/ru.js" type="text/javascript"></script><script src="/admin/r/bootstrap-editable/inputs-ext/duration/duration.js" type="text/javascript"></script><script src="/admin/r/bootstrap-editable/select2/select2.js" type="text/javascript"></script><script src="/admin/r/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script><script src="/admin/r/common.js" type="text/javascript"></script><script src="/admin/r/searchjs/search.js" type="text/javascript"></script><script src="/admin/r/typeahead/typeahead.bundle.min.js" type="text/javascript"></script><script src="/admin/r/es5-shim/es5-shim.min.js" type="text/javascript"></script><script src="/admin/r/underscore/underscore-min.js" type="text/javascript"></script><script type="text/javascript">
+                    window.locale = 'ru';
+                    window.otherLocale = 'en';
+                    window.csrfToken = 'os6iluKe5myYisGF6F0U8w==';
+
+                    $(document).ready(function() {
+
+                    moment.lang(window.locale);
+                    var resize = function() {
+                    var cell = $('table.grid th.last');
+                    if (cell.length > 0) {
+                    cell.css('width', ($(window).width() - cell.position().left) + 'px');
+                    }
+                    }
+                    $(window).resize(resize);
+                    resize();
+                    });
+                    $('a.container-toggler').click(function(event) {
+                    event.preventDefault();
+                    var link = $(this);
+                    $(link.attr('data-container')).toggle(300);
+                    });
+                    $('textarea.submit').keydown(function(event) {
+                    if (event.ctrlKey && event.keyCode == 13) {
+                    event.preventDefault();
+                    this.form.submit();
+
+                    }
+                    });
+                </script><script type="text/javascript">window.localization.Saved = 'Сохранено';</script><script type="text/javascript">window.localization.Localstoragenotavailable = 'Локальное хранилище не доступно';</script><script src="/admin/r/highlightjs/highlight.pack.js" type="text/javascript"></script><script src="/admin/r/run-report/run-report.js" type="text/javascript"></script><script src="/admin/r/ws-mode/js/ws-mode.js" type="text/javascript"></script><script src="/admin/r/hex-mode/js/hex-mode.js" type="text/javascript"></script><script type="text/javascript">
+            hljs.lineNodes = true;
+            hljs.initHighlightingOnLoad();
+        </script></body>
+</html>
