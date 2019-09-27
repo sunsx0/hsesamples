@@ -18,7 +18,7 @@ def configure_logger(args):
         logging.StreamHandler(sys.stdout),
     ]
     if args.log_path:
-        fh = logging.FileHandler(args.log_path, 'w')
+        fh = logging.FileHandler(args.log_path, 'a')
         handlers.append(fh)
 
     for handler in handlers:

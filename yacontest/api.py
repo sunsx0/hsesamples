@@ -54,14 +54,15 @@ class YaApi:
             participant=content.xpath('table/tr[4]/td[2]')[0].text,
         )
 
-        nodes = content.xpath('div[8]/*')
-        for i in range(0, len(nodes), 13):
-            test_info = TestInfo(
-                name=list(nodes[i + 2].itertext())[1],
-                test_input=parse_code_node(nodes[i + 4]),
-                output=parse_code_node(nodes[i + 6]),
-                answer=parse_code_node(nodes[i + 8]),
-                checker=parse_code_node(nodes[i + 10]),
-            )
-            submission_info.tests.append(test_info)
+        for t in (7, 8):
+            nodes = content.xpath(f'div[{t}]/*')
+            for i in range(0, len(nodes), 13):
+                test_info = TestInfo(
+                    name=list(nodes[i + 2].itertext())[1],
+                    test_input=parse_code_node(nodes[i + 4]),
+                    output=parse_code_node(nodes[i + 6]),
+                    answer=parse_code_node(nodes[i + 8]),
+                    checker=parse_code_node(nodes[i + 10]),
+                )
+                submission_info.tests.append(test_info)
         return submission_info
