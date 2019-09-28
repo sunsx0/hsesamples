@@ -3,6 +3,7 @@ import typing
 
 import dataclasses as dc
 
+from collections import deque
 from lxml import html
 
 
@@ -25,6 +26,7 @@ class TestInfo:
     output: str = ''
     answer: str = ''
     checker: str = ''
+    stderr: str = ''
 
 
 @dc.dataclass
@@ -33,6 +35,15 @@ class SubmissionInfo:
     task: str = ''
     participant: str = ''
     tests: typing.List[TestInfo] = dc.field(default_factory=list)
+
+
+FIELD_MAPPING = {
+    'Ввод': 'test_input',
+    'Вывод': 'output',
+    'Ответ': 'answer',
+    'Сообщение чекера': 'checker',
+    'Stderr': 'stderr',
+}
 
 
 class YaApi:
@@ -54,15 +65,19 @@ class YaApi:
             participant=content.xpath('table/tr[4]/td[2]')[0].text,
         )
 
-        for t in (7, 8):
-            nodes = content.xpath(f'div[{t}]/*')
-            for i in range(0, len(nodes), 13):
-                test_info = TestInfo(
-                    name=list(nodes[i + 2].itertext())[1],
-                    test_input=parse_code_node(nodes[i + 4]),
-                    output=parse_code_node(nodes[i + 6]),
-                    answer=parse_code_node(nodes[i + 8]),
-                    checker=parse_code_node(nodes[i + 10]),
-                )
-                submission_info.tests.append(test_info)
+        nodes: typing.Deque[html.HtmlElement] = deque(content.xpath(f'div[@width="100%"]/*'))
+        while nodes:
+            node = nodes.popleft()
+            if node.tag != 'hr':
+                continue
+            nodes.popleft()
+
+            test_info = TestInfo(list(nodes.popleft().itertext())[1])
+            while nodes[0].tag != 'h4':
+                name = nodes.popleft().text_content()
+                code = parse_code_node(nodes.popleft())
+                for k, v in FIELD_MAPPING.items():
+                    if k in name:
+                        setattr(test_info, v, code)
+            submission_info.tests.append(test_info)
         return submission_info

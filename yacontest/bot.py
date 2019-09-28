@@ -2,7 +2,7 @@ import enum
 import html
 import logging
 
-from yacontest.api import YaApi, SubmissionInfo, TestInfo
+from yacontest.api import YaApi, SubmissionInfo, TestInfo, FIELD_MAPPING
 from telegram import ParseMode
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 
@@ -16,17 +16,13 @@ BOT_HELP = (
 
 
 def render_test_report(test_info: TestInfo):
-    return '\n'.join((
-        f'<i>{html.escape(test_info.name)}</i>',
-        f'<b>Input:</b>',
-        f'<code>{html.escape(test_info.test_input)}</code>',
-        f'<b>Output:</b>',
-        f'<code>{html.escape(test_info.output)}</code>',
-        f'<b>Answer:</b>',
-        f'<code>{html.escape(test_info.answer)}</code>',
-        f'<b>Checker:</b>',
-        f'<code>{html.escape(test_info.checker)}</code>',
-    ))
+    head = f'<i>{html.escape(test_info.name)}</i>'
+    data = '\n'.join(
+        f'<b>{k}</b>:\n<code>{html.escape(getattr(test_info, v))}</code>'
+        for k, v in FIELD_MAPPING.items()
+        if getattr(test_info, v, '')
+    )
+    return f'{head}\n{data}'
 
 
 def render_submission_report(submission: SubmissionInfo):
@@ -93,6 +89,8 @@ class Bot:
                 parse_mode=ParseMode.HTML,
             )
             context.chat_data['state'] = StateType.Default
+        else:
+            self.reply_help(update, head='Unknown command')
 
     def on_error(self, update, context):
         self.logger.warning('Update \"%s\" caused error \"%s\"', update, context.error)
