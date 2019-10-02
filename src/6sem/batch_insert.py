@@ -20,5 +20,4 @@ def insert_batch(a: list, values: list):
 a = [1, 4, 2, 5, 7]
 b = [(0, 2), (2, 1), (5, 2)]
 insert_batch(a, b)
-
 print(*a)
